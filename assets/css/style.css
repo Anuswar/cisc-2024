@@ -440,8 +440,7 @@ h6,
     margin-bottom: 40px; /* Add margin bottom to separate from next section */
 }
 
-.cisc-section .about-text, 
-.cisc-section .about-image {
+.cisc-section .about-text {
     flex: 1;
     min-width: 300px; /* Ensure some minimum width */
     background-color: rgba(223, 198, 198, 0.8); /* Semi-transparent background for text */
@@ -450,7 +449,8 @@ h6,
 }
 
 .cisc-section .about-image {
-    margin-left: 20px; /* Add margin to separate from text */
+    flex: 1;
+    min-width: 300px; /* Ensure some minimum width */
 }
 
 .cisc-section .about-image img {
