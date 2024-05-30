@@ -459,7 +459,7 @@ h6,
     border-radius: 8px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
     .cisc-section {
         flex-direction: column; /* Change to column layout for smaller devices */
     }
@@ -471,6 +471,7 @@ h6,
 
     .cisc-section .about-text {
         order: 2; /* Change order to 2 for smaller devices */
+        margin-top: 20px; /* Add margin to separate from about-image */
     }
 
     .cisc-section .about-image {
