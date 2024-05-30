@@ -433,7 +433,7 @@ h6,
 .cisc-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust gap between elements */
+    gap: 8px; /* Adjust gap between elements */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px; /* Add margin bottom to separate from next section */
