@@ -374,7 +374,7 @@ h6,
     gap: 2rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    padding-left: -35rem; /* Adjust this value to move the section to the right */
+    padding-left: -65rem; /* Adjust this value to move the section to the right */
 }
 
 @media (max-width: 768px) {
