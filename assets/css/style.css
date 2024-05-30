@@ -467,7 +467,7 @@ h6,
 }
 
 .custom-section.bg-light {
-    background: none;
+    background: var(--light);
 }
 
 .custom-section.bg-dark {
