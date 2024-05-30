@@ -460,18 +460,12 @@ h6,
 }
 
 @media (max-width: 767.98px) {
-    .cisc-section {
-        flex-direction: column-reverse; /* Reverse the direction for smaller devices */
-    }
-
-    .cisc-section .about-text,
-    .cisc-section .about-image {
-        flex: 1;
-        min-width: auto;
+    .cisc-section .about-text {
+        order: 2; /* Change order to 2 for smaller devices */
     }
 
     .cisc-section .about-image {
-        margin-top: 20px; /* Add margin to separate from text */
+        order: 1; /* Change order to 1 for smaller devices */
     }
 }
 
