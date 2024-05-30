@@ -459,15 +459,17 @@ h6,
     border-radius: 8px;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
     .cisc-section {
-        flex-direction: column;
+        flex-direction: row-reverse; /* Reverse the order of flex items on medium screens and above */
     }
 
-    .cisc-section .about-image,
-    .cisc-section .about-text {
-        width: 100%;
-        margin: 0; /* Remove margin to stack elements vertically */
+    .about-text {
+        order: 2; /* Set the order of text content to 2 */
+    }
+
+    .about-image {
+        order: 1; /* Set the order of the image to 1 */
     }
 }
 
