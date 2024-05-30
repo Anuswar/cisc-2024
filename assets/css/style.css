@@ -491,7 +491,7 @@ h6,
 .cisc-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px; /* Small gap between text and image */
+    gap: 5px; /* Small gap between text and image */
     padding: 0.5px; /* Adjust padding as necessary */
     border-radius: 20px;
 }
@@ -502,7 +502,7 @@ h6,
     padding: 5px; /* Adjust padding as necessary */
     background-color: rgba(223, 198, 198, 0.8); /* Apply a semi-transparent background */
     border-radius: 20px;
-    height: 512px;
+    height: 500px;
 }
 
 .cisc-section .about-image {
