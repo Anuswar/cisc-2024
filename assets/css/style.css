@@ -439,8 +439,7 @@ h6,
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust gap between elements */
-    padding: 20px; /* Adjust padding around the section */
-    background: var(--light);
+    padding: 20px; /* Adjust padding around the section 
     border-radius: 8px;
 }
 
