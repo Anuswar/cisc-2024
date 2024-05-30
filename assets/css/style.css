@@ -369,60 +369,268 @@ h6,
 }
 
 /* Standard keyframes */
-@keyframes section-title-run {
-    0% { left: 0; }
-    50% { left: 145px; }
-    100% { left: 0; }
-}
-
-@keyframes section-title-run-center {
-    0% { left: 50%; margin-left: -75px; }
-    50% { left: 50%; margin-left: 45px; }
-    100% { left: 50%; margin-left: -75px; }
-}
-
-@keyframes section-title-run-sm {
-    0% { left: 0; }
-    50% { left: 85px; }
-    100% { left: 0; }
-}
-
-/* WebKit-prefixed keyframes */
 @-webkit-keyframes section-title-run {
-    0% { left: 0; }
-    50% { left: 145px; }
-    100% { left: 0; }
+    0% {
+        left: 0
+    }
+    100% {
+        left: 150px
+    }
+}
+
+@keyframes section-title-run {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 150px
+    }
 }
 
 @-webkit-keyframes section-title-run-center {
-    0% { left: 50%; margin-left: -75px; }
-    50% { left: 50%; margin-left: 45px; }
-    100% { left: 50%; margin-left: -75px; }
+    0% {
+        left: 0
+    }
+    50% {
+        left: 75px
+    }
+    100% {
+        left: 150px
+    }
 }
 
-@-webkit-keyframes section-title-run-sm {
-    0% { left: 0; }
-    50% { left: 85px; }
-    100% { left: 0; }
+@keyframes section-title-run-center {
+    0% {
+        left: 0
+    }
+    50% {
+        left: 75px
+    }
+    100% {
+        left: 150px
+    }
 }
 
-.element {
-    animation: section-title-run 2s infinite;
-    /* For WebKit browsers */
-    -webkit-animation: section-title-run 2s infinite;
+@-webkit-keyframes section-title-run-center-sm {
+    0% {
+        left: 0
+    }
+    50% {
+        left: 45px
+    }
+    100% {
+        left: 90px
+    }
 }
 
-.element-center {
-    animation: section-title-run-center 2s infinite;
-    /* For WebKit browsers */
-    -webkit-animation: section-title-run-center 2s infinite;
+@keyframes section-title-run-center-sm {
+    0% {
+        left: 0
+    }
+    50% {
+        left: 45px
+    }
+    100% {
+        left: 90px
+    }
 }
 
-.element-sm {
-    animation: section-title-run-sm 2s infinite;
-    /* For WebKit browsers */
-    -webkit-animation: section-title-run-sm 2s infinite;
+.about-text {
+    position: relative;
+    padding: 40px;
+    background: var(--light);
+    font-size: 18px;
+    color: var(--dark);
+    line-height: 2.0;
+    border: 0.25px solid #ddd;
 }
+
+.about-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/logo/ProKitLogo-Croped.png"); /* Updated the background image URL */
+    background-size: 50px 50px; /* Adjust the size as needed */
+    background-repeat: repeat;
+    opacity: 0.05; /* Adjust the opacity for better visibility */
+    z-index: 0; /* Ensure the pattern is below the text */
+}
+
+/* Adjusting the z-index for text content to be above the background pattern */
+.about-text > * {
+    position: relative;
+    z-index: 1;
+}
+
+/*** Back to Top ***/
+.back-to-top {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+}
+
+.bg-dark {
+    background: var(--dark) !important;
+}
+
+.bg-primary {
+    background: var(--primary) !important;
+}
+
+.bg-secondary {
+    background: var(--secondary) !important;
+}
+
+/* Add this CSS rule to your stylesheet */
+
+.cisc-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px; /* Small gap between text and image */
+    padding: 0.5px; /* Adjust padding as necessary */
+    border-radius: 20px;
+}
+
+.cisc-section .about-text {
+    flex: 1;
+    width: 310px; /* Ensure some minimum width */
+    padding: 5px; /* Adjust padding as necessary */
+    background-color: rgba(223, 198, 198, 0.8); /* Apply a semi-transparent background */
+    border-radius: 20px;
+    height: 512px;
+}
+
+.cisc-section .about-image {
+    flex: 1;
+    min-width: 300px; /* Ensure some minimum width */
+}
+
+.cisc-section .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .cisc-section {
+        flex-direction: column; /* Stack elements vertically on smaller devices */
+        align-items: stretch; /* Stretch items to fill the container horizontally */
+    }
+
+    .cisc-section .about-image {
+        order: -1; /* Move the image section to the top */
+        align-items: stretch; /* Stretch items to fill the container horizontally */
+    }
+
+    .cisc-section .about-text {
+        flex: none; /* Reset flex to allow elements to take full width */
+        width: 60%; /* Make both sections take full width on smaller devices */
+    }
+    
+    .cisc-section .about-image {
+        flex: none; /* Reset flex to allow elements to take full width */
+        width: 100%; /* Make both sections take full width on smaller devices */
+    }
+    
+    .cisc-section .about-text {
+        background-size: 100% auto; /* Set background size to match the image width */
+    }
+}
+
+
+
+
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem; /* Equivalent to pb-3 */
+    margin-bottom: 3rem; /* Equivalent to mb-5 */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    max-width: 1150px;
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem; /* Equivalent to pb-3 */
+    margin-bottom: 3rem; /* Equivalent to mb-5 */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    max-width: 1150px;
+}
+
+.section-title h1 {
+    font-weight: bold;
+    color: #00a3e0; /* Adjust the color to match the blue tone */
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem; /* Equivalent to pb-3 */
+    margin-bottom: 3rem; /* Equivalent to mb-5 */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    max-width: 1150px;
+}
+
+.section-title h1 {
+    font-weight: bold;
+    color: #00a3e0; /* Adjust the color to match the blue tone */
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-title h4 {
+    margin-bottom: 0.5rem;
+    color: #000; /* Adjust as necessary */
+}
+
+.section-title h6 {
+    margin-bottom: 1rem;
+    color: #000; /* Adjust as necessary */
+    font-style: italic; /* Add italic style if needed */
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 0px;
+    background: #00a3e0; /* Adjust to the same blue tone */
+    margin: 0.5rem auto 0; /* Adjust the spacing */
+}
+
+
+.mb-2{
+    text-align: center;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .cisc-section {
+        flex-direction: row-reverse; /* Reverse the order of flex items on medium screens and above */
+    }
+
+    .about-text {
+        order: 2; /* Set the order of text content to 2 */
+    }
+
+    .about-image {
+        order: 1; /* Set the order of the image to 1 */
+    }
+}
+
 
 /*** Service ***/
 .service-item {
