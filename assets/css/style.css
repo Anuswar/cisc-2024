@@ -459,6 +459,18 @@ h6,
     border-radius: 8px;
 }
 
+@media (max-width: 767.98px) {
+    .cisc-section {
+        flex-direction: column;
+    }
+
+    .cisc-section .about-image,
+    .cisc-section .about-text {
+        width: 100%;
+        margin: 0; /* Remove margin to stack elements vertically */
+    }
+}
+
 /*** Custom Section ***/
 .custom-section {
     padding-top: 2rem;
