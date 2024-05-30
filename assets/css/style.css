@@ -467,7 +467,7 @@ h6,
 }
 
 .custom-section.bg-light {
-    background: var(--light);
+    background: none;
 }
 
 .custom-section.bg-dark {
@@ -475,6 +475,13 @@ h6,
     color: var(--light);
 }
 
+.custom-section h1, .custom-section h2, .custom-section h3, .custom-section h4, .custom-section h5, .custom-section h6, .custom-section p {
+    color: inherit;
+}
+
+.custom-section .section-title h1 {
+    color: inherit;
+}
 
 
 
