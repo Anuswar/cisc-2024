@@ -470,15 +470,18 @@ h6,
     }
 
     .cisc-section .about-text {
-        order: 2; /* Change order to 2 for smaller devices */
-        margin-top: 20px; /* Add margin to separate from about-image */
+        order: 3; /* Change order to 3 for smaller devices */
     }
 
     .cisc-section .about-image {
+        order: 2; /* Change order to 2 for smaller devices */
+        margin-top: 20px; /* Add margin to separate from about-text */
+    }
+
+    .cisc-section .about-us {
         order: 1; /* Change order to 1 for smaller devices */
     }
 }
-
 /*** Custom Section ***/
 .custom-section {
     padding-top: 2rem;
