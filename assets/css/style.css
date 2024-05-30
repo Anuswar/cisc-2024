@@ -435,6 +435,31 @@ h6,
     }
 }
 
+.cisc-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between elements */
+    padding: 20px; /* Adjust padding around the section */
+    background: var(--light);
+    border-radius: 8px;
+}
+
+.cisc-section .about-text, 
+.cisc-section .about-image {
+    flex: 1;
+    min-width: 300px; /* Ensure some minimum width */
+    background-color: rgba(223, 198, 198, 0.8); /* Semi-transparent background for text */
+    border-radius: 30px;
+    padding: 20px; /* Adjust padding as necessary */
+}
+
+.cisc-section .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /*** Custom Section ***/
 .custom-section {
     padding-top: 2rem;
