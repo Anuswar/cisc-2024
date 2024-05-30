@@ -375,17 +375,31 @@ h6,
     margin-top: 4rem;
     margin-bottom: 4rem;
     /*padding-left:200px; /* Adjust this value to move the section to the right */
-    margin-left: 20px; /* Adjust this value as needed */
-    padding-top:3rem;
-    padding-bottom:3rem;
-	
-
+    margin-left: 20px; /* Adjust this value as needed 
 }
 
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
         padding-left: 0; /* Reset padding for small screens */
+    }
+}
+
+.about-section {
+    padding-left: 20px; /* Default padding for larger screens */
+}
+
+/* Responsive padding for tablets */
+@media (max-width: 768px) {
+    .about-section {
+        padding-left: 15px; /* Adjust padding for tablets */
+    }
+}
+
+/* Responsive padding for mobile devices */
+@media (max-width: 576px) {
+    .about-section {
+        padding-left: 10px; /* Adjust padding for mobile devices */
     }
 }
 
