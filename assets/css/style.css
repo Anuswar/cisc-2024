@@ -434,11 +434,14 @@ h6,
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust gap between elements */
-    padding: 20px; /* Adjust padding around the section 
+    background: var(--light);
     border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px; /* Add margin bottom to separate from next section */
 }
 
-.cisc-section .about-text{
+.cisc-section .about-text, 
+.cisc-section .about-image {
     flex: 1;
     min-width: 300px; /* Ensure some minimum width */
     background-color: rgba(223, 198, 198, 0.8); /* Semi-transparent background for text */
