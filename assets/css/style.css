@@ -460,9 +460,14 @@ h6,
 }
 
 @media (max-width: 767.98px) {
-    .cisc-section .about-text {
-        order: 1; /* Move about-text after about-image */
-        margin-top: 20px; /* Add some margin between about-image and about-text */
+    .cisc-section {
+        flex-direction: column; /* Change to column layout for smaller devices */
+    }
+
+    .cisc-section .about-text,
+    .cisc-section .about-image {
+        width: calc(100% - 40px); /* Take full width on smaller devices */
+        margin: 0 auto; /* Center the elements */
     }
 }
 
