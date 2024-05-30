@@ -375,6 +375,12 @@ h6,
     font-size: 42px;
 }
 
+.section {
+    background-color: #F3E5F5; /* Light purple-pink background color */
+    padding: 50px; /* Adjust padding as needed */
+}
+
+
 @media (min-width: 768px) {
     .section-title h1 span {
         font-size: 28px;
