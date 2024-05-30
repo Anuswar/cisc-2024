@@ -334,7 +334,7 @@ h6,
 
 .section-title.text-center::before {
     left: 50%;
-    margin-left: -75px;
+    margin-left: -50px;
 }
 
 .section-title.section-title-sm::before {
