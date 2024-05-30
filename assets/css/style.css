@@ -459,17 +459,19 @@ h6,
     border-radius: 8px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767.98px) {
     .cisc-section {
-        flex-direction: row-reverse; /* Reverse the order of flex items on medium screens and above */
+        flex-direction: column; /* Change flex direction to column */
     }
 
-    .about-text {
-        order: 2; /* Set the order of text content to 2 */
+    .cisc-section .about-text,
+    .cisc-section .about-image {
+        margin-left: 0; /* Remove margin */
     }
 
-    .about-image {
-        order: 1; /* Set the order of the image to 1 */
+    /* Reorder the items */
+    .cisc-section .about-image {
+        order: -1; /* Push the image above text */
     }
 }
 
