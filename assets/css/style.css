@@ -467,9 +467,9 @@ h6,
     z-index: 1;
 }
 
-.custom-section.bg-light {
+/*.custom-section.bg-light {
     background: var(--light);
-}
+}*/
 
 .custom-section.bg-dark {
     background: var(--dark);
