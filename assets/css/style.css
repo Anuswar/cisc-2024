@@ -449,6 +449,10 @@ h6,
     padding: 20px; /* Adjust padding as necessary */
 }
 
+.cisc-section .about-image {
+    margin-left: 20px; /* Add margin to separate from text */
+}
+
 .cisc-section .about-image img {
     width: 100%;
     height: auto;
