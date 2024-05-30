@@ -459,7 +459,7 @@ h6,
     border-radius: 8px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 576px) {
     .cisc-section {
         flex-direction: column; /* Change to column layout for smaller devices */
     }
