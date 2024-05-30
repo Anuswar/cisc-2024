@@ -373,31 +373,30 @@ h6,
     margin-top: 4rem;
     margin-bottom: 4rem;
     /*padding-left:200px; /* Adjust this value to move the section to the right */
-    margin-left: 20px; /* Adjust this value as needed 
+    padding-left: 20px; /* Adjust this value as needed 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
     .about-section {
-        flex-direction: column;
-        padding-left: 0; /* Reset padding for small screens */
+        padding-left: 30px;
     }
 }
 
-.about-section {
-    padding-left: 20px; /* Default padding for larger screens */
-}
-
-/* Responsive padding for tablets */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .about-section {
-        padding-left: 15px; /* Adjust padding for tablets */
+        padding-left: 40px;
     }
 }
 
-/* Responsive padding for mobile devices */
-@media (max-width: 576px) {
+@media (min-width: 992px) {
     .about-section {
-        padding-left: 10px; /* Adjust padding for mobile devices */
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-section {
+        padding-left: 60px;
     }
 }
 
