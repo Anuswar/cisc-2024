@@ -466,8 +466,7 @@ h6,
 
     .cisc-section .about-text,
     .cisc-section .about-image {
-        width: calc(100% - 40px); /* Take full width on smaller devices */
-        margin: 0 auto; /* Center the elements */
+        width: 100%; /* Take full width on smaller devices */
     }
 }
 
