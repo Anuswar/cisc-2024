@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
@@ -466,7 +468,12 @@ h6,
 
     .cisc-section .about-text,
     .cisc-section .about-image {
-        width: 100%; /* Take full width on smaller devices */
+        width: calc(100% - 20px); /* Take full width minus margin on smaller devices */
+        margin-right: 0; /* Remove margin between elements */
+    }
+
+    .cisc-section .about-image {
+        margin-bottom: 20px; /* Add margin between image and text */
     }
 }
 
