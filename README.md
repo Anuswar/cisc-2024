@@ -2,10 +2,6 @@
 
 Welcome to the GitHub repository for the CISC-2024 Conference website! This repository contains the source code for the website that provides information about the first annual International Conference on Computational Intelligence and Smart Communication (CISC-2024) organized by Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal, Udupi, Karnataka, India.
 
-## About CISC-2024
-
-CISC-2024 aims to bring together researchers, academicians, engineers, and the industrial fraternity to share their experiences and exchange ideas on the latest developments in the fields of soft computation, artificial intelligent systems, and smart communication. The conference seeks to discuss the role of computational intelligence in growth and the shaping of society, offering unique insights into the architecture and applications of futuristic technology in multi-disciplinary areas to promote scientific growth.
-
 ## ⚙️ Installation
 
 To run this website locally or contribute to its development, follow these steps:
