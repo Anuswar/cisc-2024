@@ -506,6 +506,11 @@ a.movie-item:hover {
   z-index: 200;
 }
 
+.nav-link.active {
+  color: #06a3da; 
+  font-weight: bold; /
+}
+
 .menu.open {
   left: 0;
 }
@@ -638,18 +643,18 @@ a.movie-item:hover {
 }
 
 /*=============== SLIDESHOW BANNER ===============*/
-.swiper {
+.mySwiper {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.swiper-slide {
+.slider-blank {
   background-size: cover;
   background-position: center;
 }
 
-.swiper-slide::after {
+.slider-blank::after {
   content: "";
   position: absolute;
   top: 0;
@@ -754,7 +759,39 @@ a.movie-item:hover {
   transition: opacity 0.3s ease;
 }
 
-/* =============== ORGANIZING COMMITTEE =============== */
+/* =============== ABOUT =============== */
+.about-text {
+  background-color: #eef9ff !important;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position-relative img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+/* =============== COMMITTEE =============== */
 .committee-container {
   display: flex;
   flex-wrap: wrap;
@@ -785,27 +822,6 @@ a.movie-item:hover {
 
 .committee-item li {
   margin-bottom: 5px;
-}
-
-/* Flexbox for centering */
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  width: 100%;
-  height: auto;
-}
-
-/* Ensure the text container is centered */
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
 }
 
 /* Media query for smaller screens */
@@ -929,152 +945,69 @@ a.movie-item:hover {
 
 #submission a {
   margin-bottom: 1rem;
-  word-wrap: break-word; /* Ensure words break to the next line */
-  overflow-wrap: break-word; /* Ensure content doesn't overflow */
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
-/* =============== CONTACT =============== */
-
-/*** Service ***/
-.service-item {
-  position: relative;
-  height: 300px;
-  padding: 0 30px;
-  transition: 0.5s;
+/* =============== KEY SPEAKERS =============== */
+.custom-swiper {
+  width: 100%;
+  padding: 20px 0; 
 }
 
-.service-item .service-icon {
-  margin-bottom: 30px;
-  width: 60px;
-  height: 60px;
+.custom-swiper-slide {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: var(--primary);
-  border-radius: 2px;
-  transform: rotate(-45deg);
+  align-items: center;
 }
 
-.service-item .service-icon i {
-  transform: rotate(45deg);
+.testimonial-item {
+  background-color: #eef9ff !important;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
-.service-item a.btn {
-  position: absolute;
-  width: 60px;
-  bottom: -48px;
-  left: 50%;
-  margin-left: -30px;
-  opacity: 0;
+.testimonial-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 
-.service-item:hover a.btn {
-  bottom: -24px;
-  opacity: 1;
-}
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-dots {
+.custom-swiper .swiper-pagination {
   margin-top: 15px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  background: #dddddd;
-  border-radius: 2px;
-  transition: 0.5s;
+/* =============== BACK TO TOP =============== */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  display: inline-flex;
+  z-index: 50;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-radius: 50rem !important;
+  transition: bottom 0.4s, transform 0.4s;
 }
 
-.testimonial-carousel .owl-dot.active {
-  width: 30px;
-  background: var(--primary);
+.show-scroll {
+  bottom: 3rem;
 }
 
-.testimonial-carousel .owl-item.center {
-  position: relative;
-  z-index: 1;
-}
-
-.testimonial-carousel .owl-item .testimonial-item {
-  transition: 0.5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-  background: #ffffff !important;
-  box-shadow: 0 0 30px #dddddd;
-}
-
-/*** Team ***/
-.team-item {
-  transition: 0.5s;
-}
-
-.team-social {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
-
-.team-social a.btn {
-  position: relative;
-  margin: 0 3px;
-  margin-top: 100px;
-  opacity: 0;
-}
-
-.team-item:hover {
-  box-shadow: 0 0 30px #dddddd;
-}
-
-.team-item:hover .team-social {
-  background: rgba(9, 30, 62, 0.7);
-}
-
-.team-item:hover .team-social a.btn:first-child {
-  opacity: 1;
-  margin-top: 0;
-  transition: 0.3s 0s;
-}
-
-.team-item:hover .team-social a.btn:nth-child(2) {
-  opacity: 1;
-  margin-top: 0;
-  transition: 0.3s 0.05s;
-}
-
-.team-item:hover .team-social a.btn:nth-child(3) {
-  opacity: 1;
-  margin-top: 0;
-  transition: 0.3s 0.1s;
-}
-
-.team-item:hover .team-social a.btn:nth-child(4) {
-  opacity: 1;
-  margin-top: 0;
-  transition: 0.3s 0.15s;
-}
-
-.team-item .team-img img,
-.blog-item .blog-img img {
-  transition: 0.5s;
-}
-
-.team-item:hover .team-img img,
-.blog-item:hover .blog-img img {
-  transform: scale(1.15);
+/* ======= BREAKPOINTS ======= */
+@media screen and (min-width: 1150px) {
+  .scrollup {
+    right: 3rem;
+  }
 }
 
 /*** Miscellaneous ***/
@@ -1085,12 +1018,6 @@ a.movie-item:hover {
     margin-top: -75px;
     z-index: 1;
   }
-}
-
-.bg-header {
-  background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)),
-    url(../img/carousel-1.jpg) center center no-repeat;
-  background-size: cover;
 }
 
 .link-animated a {
@@ -1189,30 +1116,3 @@ ul.b {
   text-justify: inter-word;
 }
 
-/* =============== BACK TO TOP =============== */
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -50%;
-  display: inline-flex;
-  z-index: 50;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1.5rem;
-  color: #ffffff;
-  border-radius: 50rem !important;
-  transition: bottom 0.4s, transform 0.4s;
-}
-
-.show-scroll {
-  bottom: 3rem;
-}
-
-/* ======= BREAKPOINTS ======= */
-@media screen and (min-width: 1150px) {
-  .scrollup {
-    right: 3rem;
-  }
-}

@@ -22,10 +22,56 @@ var swiper = new Swiper(".mySwiper", {
   effect: "fade",
   grabCursor: true,
   loop: true,
+
   autoplay: {
     delay: 3500,
     disableOnInteraction: false,
   },
+});
+
+ var swiper = new Swiper(".custom-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  lazy: true,
+  grabCursor: true,
+  loop: true,
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  mousewheel: true,
+  
+  keyboard: {
+    enabled: true,
+  },
+
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",  
+  },
+  
+  breakpoints: {
+    // when window width is <= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,  
+    },
+
+    // when window width is <= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },  
 });
 
 /*=============== HEADER ===============*/
@@ -56,8 +102,6 @@ window.addEventListener("scroll", () => {
   const menuBtn = document.querySelector(".menuBtn");
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
-
-  const searchBtn = document.getElementById("searchBtn");
   const navLinks = document.querySelectorAll(".navlink");
 
   function openMenu() {
@@ -80,6 +124,27 @@ window.addEventListener("scroll", () => {
       );
     }
   }
+
+  function setActiveLink() {
+    let currentSection = sections[0];
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section;
+      }
+    });
+
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove('active');
+      if (navLink.getAttribute('href') === `#${currentSection.id}`) {
+        navLink.classList.add('active');
+      }
+    });
+  }
+
+  const sections = document.querySelectorAll("section");
+  window.addEventListener("scroll", setActiveLink);
 
   if (menuBtn) {
     menuBtn.addEventListener("click", function () {
@@ -118,18 +183,16 @@ window.addEventListener("scroll", () => {
     });
   }
 
-  if (searchBtn) {
-    searchBtn.addEventListener("click", function () {
-      closeMenu();
-    });
-  }
-
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       closeMenu();
     }
   });
+
+  // Initial call to set the active link
+  setActiveLink();
 })();
+
 
 /*=============== BACK TO TOP ===============*/
 // Function to show or hide the scroll-up button based on scroll position
