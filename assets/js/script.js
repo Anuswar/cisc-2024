@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
 
     // Initialize ScrollReveal
-    ScrollReveal().reveal('.top_bar .col-lg-8', {
+    ScrollReveal().reveal('.left_anim', {
       origin: 'left',
       distance: '50px',
       duration: 1000,
