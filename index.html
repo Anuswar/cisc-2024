@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <meta name="description" content="CISC-2024: International Conference on Computational Intelligence and Smart Communication, organized by SMVITM, Bantakal. Join us on 20-21 December 2024 to explore trends in soft computation, AI, and smart communication." />
     <meta name="keywords" content="CISC-2024, Computational Intelligence, Smart Communication, Conference, SMVITM, Bantakal, AI, IoT, Cloud Computing, Machine Learning, Data Analytics, Image Processing, Network Security, VLSI, Microelectronics, Control, Automation, Soft Computation, Intelligent Systems" />
     <meta name="author" content="SMVITM, Bantakal" />
@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/CISC-2024-logo-small.png" />
 
     <!-- External Scripts -->
+    <script defer src="https://unpkg.com/scrollreveal"></script>
     <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script defer src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -36,8 +37,8 @@
     <section id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
       <div class="spinner"></div>
     </section>
-
-    <!--=============== HEADER ===============-->
+    
+    <!--=============== TOP BAR ===============-->
     <section class="container-fluid bg-dark px-5 d-none d-lg-block top_bar" id="home">
       <div class="row gx-0">
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
@@ -46,6 +47,7 @@
               <i class="fa fa-map-marker-alt me-2"></i>
               SMVITM, Vishwothamanagara, Bantakal
             </small>
+            
             <small class="me-3 text-light">
               <i class="fa fa-phone-alt me-2"></i>
               Mob: +91 9611615001
@@ -56,6 +58,7 @@
             </small>
           </div>
         </div>
+
         <div class="col-lg-4 text-center text-lg-end">
           <div class="d-inline-flex align-items-center" style="height: 45px">
             <a class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://twitter.com/SmvitM" style="background-color: #1da1f2; border-color: #1da1f2">
@@ -78,13 +81,14 @@
       </div>
     </section>
 
-    <!--=============== TOP BAR ===============-->
+    <!--=============== HEADER ===============-->
     <header class="header container-fluid">
       <div class="nav container-fluid">
         <div class="header-container logo">
           <img src="assets/images/CISC-2024-logo-small.png" alt="loading..." />
           <div class="header-title">CISC-2024</div>
         </div>
+
         <div class="nav-icons">
           <div class="search">
             <span class="icon2">
@@ -207,23 +211,7 @@
             <img src="assets/images/home/smvitm-1.jpg" />
             <div class="carousel-caption">
               <div class="p-3">
-                <h4 class="text-uppercase mb-3">
-                  Computational Intelligence and Smart Communication
-                </h4>
-                <h1 class="display-1 mb-md-4">CISC-2024</h1>
-                <h2 class="mb-3">20th and 21st December 2024</h2>
-                <a href="#call_for_papers" class="btn btn-primary py-md-3 px-md-5" style="margin: 10px">Call for papers</a>
-                <a href="https://cmt3.research.microsoft.com/CISC2024." class="btn btn-outline-light py-md-3 px-md-5">Submit Papers</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slider-blank">
-            <img src="assets/images/home/smvitm-2.JPG" />
-            <div class="carousel-caption">
-              <div class="p-3">
-                <h4 class="text-uppercase mb-3">
-                  Computational Intelligence and Smart Communication
-                </h4>
+                <h4 class="text-uppercase mb-3">Computational Intelligence and Smart Communication</h4>
                 <h1 class="display-1 mb-md-4">CISC-2024</h1>
                 <h2 class="mb-3">20th and 21st December 2024</h2>
                 <a href="#call_for_papers" class="btn btn-primary py-md-3 px-md-5" style="margin: 10px">Call for papers</a>
@@ -240,9 +228,7 @@
       <div class="container py-4">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 800px">
           <h1 class="fw-bold text-primary text-uppercase">About Us</h1>
-          <h4 class="mb-0">
-            Computational Intelligence and Smart Communication - 2024
-          </h4>
+          <h4 class="mb-0">Computational Intelligence and Smart Communication - 2024</h4>
           <h6 class="mb-0">
             "Trends and Developments in Soft Computation, Intelligent Systems
             and Smart Communication: Pathways to Future"
@@ -296,7 +282,7 @@
         </div>
 
         <div class="committee-container">
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -311,7 +297,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -326,7 +312,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -345,7 +331,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -364,7 +350,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -383,7 +369,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -412,7 +398,7 @@
             </ul>
           </div>
 
-          <div class="committee-item">
+          <div class="committee-item top-anim">
             <div class="service-icon">
               <i class="fa fa-shield-alt text-blue"></i>
             </div>
@@ -453,7 +439,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -498,7 +484,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -542,7 +528,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -585,7 +571,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -636,7 +622,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -676,7 +662,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -719,7 +705,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -762,7 +748,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -803,7 +789,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="col-lg-4 d-flex align-items-stretch top-anim">
             <div class="bg-dark w-100" style="border-radius: 10px">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="bg-dark rounded d-flex flex-column">
@@ -852,7 +838,7 @@
         <h4 class="mb-0">The dates to be remembered</h4>
       </div>
 
-      <div class="container-fluid" style=" background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
+      <div class="container-fluid schedule-container top-anim" style=" background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
         <div class="row g-5 text-center">
           <div class="col-lg-8 text-center d-flex align-items-center justify-content-center">
             <div class="row g-5 text-center">
@@ -917,7 +903,7 @@
         <h1 class="fw-bold text-primary text-uppercase">Submision of Paper</h1>
       </div>
 
-      <div class="container-fluid" style="background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
+      <div class="container-fluid top-anim" style="background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
         <div class="py-5" style="max-width: 100%; background-size: cover">
           <h1 class="fw-bold text-primary text-uppercase"></h1>
           <p class="mb-0" style="color: black">
@@ -1020,7 +1006,7 @@
       </div>
     </section>
 
-    <!--==================== KEY SPEAKERS ====================-->
+    <!--==================== SPEAKERS ====================-->
     <section class="container-fluid py-5" id="">
       <div class="container py-5">
         <div class="container-fluid" data-wow-delay="0.1s" style="background-size: cover; background-position: center">
@@ -1030,7 +1016,7 @@
           </div>
         </div>
        
-        <div class="swiper custom-swiper">
+        <div class="swiper custom-swiper top-anim">
           <div class="swiper-wrapper">
             <div class="swiper-slide custom-swiper-slide">
               <div class="testimonial-item bg-light card my-4">
@@ -1104,9 +1090,9 @@
         </div>
       </div>
 
-      <div class="container-fluid" style="background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
+      <div class="container-fluid top-anim" style="background-color: #eef9ff !important; border: 1px solid #ccc; padding: 20px; max-width: 1300px; border-radius: 10px;">
         <div class="container py-5">
-          <div class="text-left pb-3 mb-5 mx-auto" style="max-width: 1296px">
+          <div class="text-left pb-3 mb-5 mx-auto top-anim" style="max-width: 1296px">
             <p class="mb-0 text-center" style="color: black">
               After the intimation of acceptance of paper, the participants are
               requested to register for the conference.
@@ -1124,7 +1110,7 @@
             </p>
           </div>
 
-          <div class="col-lg-12">
+          <div class="col-lg-12 top-anim">
             <div class="bg-white rounded shadow position-relative" style="z-index: 1">
               <div class="border-bottom py-4 px-5 mb-4 text-center">
                 <div class="rounded d-flex flex-column">
@@ -1148,7 +1134,7 @@
             </div>
           </div>
 
-          <div class="row g-0">
+          <div class="row g-0 top-anim">
             <div class="col-lg-6">
               <div class="border-bottom py-4 px-5 mb-4 text-center"></div>
               <div class="bg-dark rounded">
@@ -1261,7 +1247,7 @@
         </div>
       </div>
 
-      <div class="container-fluid" style="background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; max-width: 1300px; border-radius: 10px;">
+      <div class="container-fluid top-anim" style="background-size: cover; background-position: center; background-color: #eef9ff !important; border: 1px solid #ccc; max-width: 1300px; border-radius: 10px;">
         <div class="container py-5">
           <div class="col-lg-12 col-md-12 pt-0 pt-lg-5 mb-5">
             <h3 class="text-dark mb-0">Useful Download Links</h3>
@@ -1288,7 +1274,7 @@
     <!--==================== CONTACT ====================-->
     <section class="container-fluid py-5" id="contact">
       <div class="container py-5">
-        <div class="container-fluid"style="background-size: cover; background-position: center">
+        <div class="container-fluid top-anim"style="background-size: cover; background-position: center">
           <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 1150px">
             <h1 class="fw-bold text-primary text-uppercase">
               Key Person to Contact
@@ -1297,7 +1283,7 @@
           </div>
         </div>
 
-        <div style="margin-bottom: 50px;" class="swiper custom-swiper">
+        <div style="margin-bottom: 50px;" class="swiper custom-swiper top-anim">
           <div class="swiper-wrapper">
             <div class="swiper-slide custom-swiper-slide">
               <div class="testimonial-item card my-4">
@@ -1307,9 +1293,9 @@
                     <h5 class="text-primary card-title mb-2">Dr. Nagaraja Bhat</h5>
                     <p class="card-text">Conference Chair</p>
                     <small class="text-muted">
-                      <span class="d-block">Dean Academics</span>
-                      <span class="d-block">Mobile: +91 9964304006</span>
-                      <span class="d-block">Email: academic.dean@sode-edu.in</span>
+                      <span id="content1">Dean Academics</span> <br>
+                      <span id="content1">Mobile: +91 9964304006</span> <br>
+                      <span id="content1">Email: academic.dean@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1324,9 +1310,9 @@
                     <h5 class="text-primary mb-2">Dr. Soumya J. Bhat</h5>
                     <p class="card-text">Conference Chair</p>
                     <small class="text-muted">
-                      <span id="content1">Head of the Department, CSE</span>
-                      <span id="content1">Mobile: +91 9886359431</span>
-                      <span id="content1">Email: cs@sode-edu.in</span>
+                      <span id="content1">Head of the Department, CSE</span> <br>
+                      <span id="content1">Mobile: +91 9886359431</span> <br>
+                      <span id="content1">Email: cs@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1341,9 +1327,9 @@
                     <h5 class="text-primary mb-2">Dr. Guruprasad</h5>
                     <p class="card-text">Conference Chair</p>
                     <small class="text-muted">
-                      <span id="content1">Head of the Department, ECE</span>
-                      <span id="content1">Mob: +91 9482098406</span>
-                      <span id="content1">Email: ec@sode-edu.in</span>
+                      <span id="content1">Head of the Department, ECE</span> <br>
+                      <span id="content1">Mobile: +91 9482098406</span> <br>
+                      <span id="content1">Email: ec@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1358,9 +1344,9 @@
                     <h5 class="text-primary mb-1">Dr. Bharti Panjwani</h5>
                     <p class="card-text">Organizing Chair</p>
                     <small class="normal">
-                      <span id="content1">Associate Professor, Department of CSE</span>
-                      <span id="content1">Mobile: +91 7017495148</span>
-                      <span id="content1">Email: bharti.cs@sode-edu.in</span>
+                      <span id="content1">Associate Professor, Department of CSE</span> <br>
+                      <span id="content1">Mobile: +91 7017495148</span> <br>
+                      <span id="content1">Email: bharti.cs@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1375,9 +1361,9 @@
                     <h6 class="text-primary mb-1">Dr. Shilpa Kamath</h6>
                     <p class="card-text">Technical Program Chair</p>
                     <small class="normal">
-                      <span id="content1">Associate Professor, Department of ECE</span>
-                      <span id="content1">Mobile: +91 9482440940</span>
-                      <span id="content1">Email: shilpa.ec@sode-edu.in</span>
+                      <span id="content1">Associate Professor, Department of ECE</span> <br>
+                      <span id="content1">Mobile: +91 9482440940</span> <br>
+                      <span id="content1">Email: shilpa.ec@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1392,9 +1378,9 @@
                     <h6 class="text-primary mb-1">Dr. Renita Sharon Monis</h6>
                     <p class="card-text">Technical Program Chair</p>
                     <small class="normal">
-                      <span id="content1">Department of Mathematics</span>
-                      <span id="content1">Mobile: +91 XXXXXXXXXX</span>
-                      <span id="content1">Email: renita.maths@sode-edu.in</span>
+                      <span id="content1">Department of Mathematics</span> <br>
+                      <span id="content1">Mobile: +91 XXXXXXXXXX</span> <br>
+                      <span id="content1">Email: renita.maths@sode-edu.in</span> <br>
                     </small>
                   </div>
                 </div>
@@ -1407,7 +1393,7 @@
           <div class="swiper-pagination"></div>
         </div>
      
-        <div class="row g-3">
+        <div class="row g-3 top-anim">
           <div class="col-lg-6 col-md-8">
             <div class="bg-dark rounded d-flex flex-column text-left" style="color: white">
               <div class="border-bottom py-4 px-5 mb-4 text-center" style="border-radius: 10px">
@@ -1506,44 +1492,45 @@
                   <h3 class="text-light mb-0">Quick Links</h3>
                 </div>
 
-                <div class="link-animated d-flex flex-column justify-content-start">
-                  <a class="text-light mb-2" href="#">
+                <div class="link-animated d-flex flex-column justify-content-start" id="quick-links">
+                  <a class="text-light mb-2" href="#home">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     Home
                   </a>
-
+  
                   <a class="text-light mb-2" href="#about">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     About Us
                   </a>
-
+  
                   <a class="text-light mb-2" href="#committee">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     Committee
                   </a>
-
+  
                   <a class="text-light mb-2" href="#call_for_papers">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     Call of Papers
                   </a>
+  
                   <a class="text-light mb-2" href="#schedule">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
-                    Schedule
+                    Schedule  
                   </a>
 
                   <a class="text-light mb-2" href="#submission">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     Submit Paper
                   </a>
-
+  
                   <a class="text-light mb-2" href="#registration">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
-                    Registration
+                    Registration  
                   </a>
 
                   <a class="text-light mb-2" href="#downloads">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
-                    Download
+                    Download  
                   </a>
 
                   <a class="text-light" href="#contact">

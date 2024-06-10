@@ -1,18 +1,83 @@
 /*=============== PRELOADER ===============*/
 window.addEventListener("load", () => {
-  // Hide the spinner after the page is fully loaded
-  const spinner = document.querySelector("#spinner");
-  if (spinner) {
-    spinner.classList.remove("show");
+    // Hide the spinner after the page is fully loaded
+    const spinner = document.querySelector("#spinner");
+    if (spinner) {
+      spinner.classList.remove("show");
 
-    spinner.addEventListener("transitionend", () => {
-      spinner.style.display = "none";
+      spinner.addEventListener("transitionend", () => {
+        spinner.style.display = "none";
+      });
+    }
+
+    // Scroll to the top when all external resources are loaded
+    window.scrollTo(0, 0);
+
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.top_bar .col-lg-8', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
     });
-  }
 
-  // Scroll to the top when all external resources are loaded
-  window.scrollTo(0, 0);
-});
+    ScrollReveal().reveal('.top_bar .col-lg-4', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.header .logo, .header .menuBtn', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.p-3', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.section-title', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.about-text', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.about-image', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+
+    ScrollReveal().reveal('.top-anim', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+    });
+  });
 
 /*=============== SWIPER SLIDER ===============*/
 var swiper = new Swiper(".mySwiper", {
@@ -32,7 +97,6 @@ var swiper = new Swiper(".mySwiper", {
  var swiper = new Swiper(".custom-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-  lazy: true,
   grabCursor: true,
   loop: true,
   centeredSlides: false,
@@ -193,6 +257,37 @@ window.addEventListener("scroll", () => {
   setActiveLink();
 })();
 
+/*=============== FOOTER ===============*/
+document.addEventListener("DOMContentLoaded", function () {
+  const quickLinks = document.getElementById("quick-links");
+  const links = quickLinks.getElementsByTagName("a");
+
+  for (let link of links) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault(); 
+      const href = this.getAttribute("href");
+      
+      if (href.startsWith("#")) {
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+      
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      
+        // Remove the fragment identifier from the URL
+        if (history.pushState) {
+          history.pushState(null, null, window.location.pathname + window.location.search);
+        } else {
+          window.location.hash = "";
+        }
+      }
+    }); 
+  }  
+});
 
 /*=============== BACK TO TOP ===============*/
 // Function to show or hide the scroll-up button based on scroll position
