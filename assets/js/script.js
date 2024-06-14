@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
       easing: 'ease-in-out',
     });
 
-    ScrollReveal().reveal('.header .logo, .header .menuBtn', {
+    ScrollReveal().reveal('.header .logo, .header .menuBtn, .header .non', {
       origin: 'top',
       distance: '50px',
       duration: 1000,
@@ -139,34 +139,35 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 /*=============== HEADER ===============*/
-const header = document.querySelector(".header");
-let lastScrollY = window.scrollY;
+document.addEventListener("DOMContentLoaded", function() {
+  const header = document.querySelector(".header");
+  let lastScrollY = window.scrollY;
 
-window.addEventListener("scroll", () => {
-  if (header) {
-    if (window.scrollY > lastScrollY) {
-      // Scrolling down
-      header.classList.add("hide");
-    } else {
-      // Scrolling up
-      header.classList.remove("hide");
+  window.addEventListener("scroll", () => {
+    if (header) {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        header.classList.add("hide");
+      } else {
+        // Scrolling up
+        header.classList.remove("hide");
+      }
+      lastScrollY = window.scrollY;
+
+      if (window.pageYOffset > 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
     }
-    lastScrollY = window.scrollY;
+    setActiveLink();
+  });
 
-    if (window.pageYOffset > 0) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  }
-});
-
-/*=============== MENU ===============*/
-(function () {
   const menuBtn = document.querySelector(".menuBtn");
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
-  const navLinks = document.querySelectorAll(".navlink");
+  const navLinks = document.querySelectorAll(".non .nav-link, .menu .nav-link");
+  const sections = document.querySelectorAll("section");
 
   function openMenu() {
     if (menu) menu.classList.add("open");
@@ -192,7 +193,7 @@ window.addEventListener("scroll", () => {
   function setActiveLink() {
     let currentSection = sections[0];
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const sectionTop = section.offsetTop - 100;
       if (window.scrollY >= sectionTop) {
         currentSection = section;
@@ -200,18 +201,17 @@ window.addEventListener("scroll", () => {
     });
 
     navLinks.forEach((navLink) => {
-      navLink.classList.remove('active');
-      if (navLink.getAttribute('href') === `#${currentSection.id}`) {
-        navLink.classList.add('active');
+      navLink.classList.remove("active");
+      if (navLink.getAttribute("href") === `#${currentSection.id}`) {
+        navLink.classList.add("active");
       }
     });
   }
 
-  const sections = document.querySelectorAll("section");
   window.addEventListener("scroll", setActiveLink);
 
   if (menuBtn) {
-    menuBtn.addEventListener("click", function () {
+    menuBtn.addEventListener("click", function() {
       if (menu && menu.classList.contains("open")) {
         closeMenu();
       } else {
@@ -222,7 +222,7 @@ window.addEventListener("scroll", () => {
 
   if (navLinks) {
     navLinks.forEach((navLink) => {
-      navLink.addEventListener("click", function (event) {
+      navLink.addEventListener("click", function(event) {
         closeMenu();
         event.preventDefault(); // Prevent default navigation to handle it manually
         const href = navLink.getAttribute("href");
@@ -242,12 +242,12 @@ window.addEventListener("scroll", () => {
   }
 
   if (overlay) {
-    overlay.addEventListener("click", function () {
+    overlay.addEventListener("click", function() {
       closeMenu();
     });
   }
 
-  document.addEventListener("keydown", function (event) {
+  document.addEventListener("keydown", function(event) {
     if (event.key === "Escape") {
       closeMenu();
     }
@@ -255,7 +255,8 @@ window.addEventListener("scroll", () => {
 
   // Initial call to set the active link
   setActiveLink();
-})();
+});
+
 
 /*=============== FOOTER ===============*/
 document.addEventListener("DOMContentLoaded", function () {

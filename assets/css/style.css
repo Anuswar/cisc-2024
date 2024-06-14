@@ -499,6 +499,24 @@ a.movie-item:hover {
   }
 }
 
+.navbar-nav a{
+  color: #fff;
+}
+
+.icon2{
+  display: none;
+}
+
+@media (max-width: 1192px) {
+  .navbar-nav a {
+    display: none;
+  }
+
+  .icon2 {
+    display: block;
+  }
+}
+
 /*=============== menu ===============*/
 .menu {
   position: fixed;
@@ -1023,3 +1041,24 @@ a.movie-item:hover {
     margin-bottom: -75px;
   }
 }
+
+.account-details-container {
+      display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .account-details {
+      flex: 1;
+      min-width: 300px;
+    }
+    .qr-code {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 300px;
+    }
+    .qr-code img {
+      width: auto;
+      height: auto;
+    }
