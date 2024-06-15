@@ -1044,21 +1044,24 @@ a.movie-item:hover {
 
 .account-details-container {
       display: flex;
-    justify-content: flex-start;
-    align-items: center;
+      flex-direction: column;
     }
-    .account-details {
+    @media (min-width: 768px) {
+      .account-details-container {
+        flex-direction: row;
+      }
+    }
+    .account-details, .qr-code {
       flex: 1;
-      min-width: 300px;
+      min-width: 0; 
     }
     .qr-code {
-      flex: 1;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      min-width: 300px;
+      justify-content: center;
     }
     .qr-code img {
-      width: auto;
+      max-width: 100%;
       height: auto;
+      max-height: 200px; 
     }
