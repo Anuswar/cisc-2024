@@ -1,29 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISC-2024 | International Conference on Computational Intelligence and Smart Communication</title>
+    <meta name="description" content="CISC-2024 is the first series of an annual International Conference on Computational Intelligence and Smart Communication organized by SMVITM, Bantakal, Udupi, Karnataka, India. Join us on 20th and 21st December 2024 to share experiences and exchange ideas on the latest developments in soft computation, AI systems, and smart communication.">
+    <meta name="keywords" content="CISC-2024, cise 2024, conference, CISC 2024, Computational Intelligence, Smart Communication, International Conference, Shri Madhwa Vadiraja Institute of Technology and Management, SMVITM, Bantakal, Udupi, Karnataka, Soft Computation, Artificial Intelligence, Smart Communication, Digital Revolution, IEEE Conference, Research, Academicians, Engineers, Industry Fraternity, Cloud Computing, IoT, AI, Machine Learning, Data Analytics, Image Processing, Computer Vision, Network Security, Blockchain, VLSI, Microelectronics, Control and Automation, IEEE Publishing, Technical Education, Conference Submission">
+    <meta name="author" content="Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM)">
+    <link rel="canonical" href="https://sode-edu.in/cisc/">
+    <link rel="icon" href="assets/images/CISC-2024-logo-small.png">
     
-    <meta name="description" content="CISC-2024: International Conference on Computational Intelligence and Smart Communication, organized by SMVITM, Bantakal. Join us on 20-21 December 2024 to explore trends in soft computation, AI, and smart communication." />
-    <meta name="keywords" content="CISC-2024, Computational Intelligence, Smart Communication, Conference, SMVITM, Bantakal, AI, IoT, Cloud Computing, Machine Learning, Data Analytics, Image Processing, Network Security, VLSI, Microelectronics, Control, Automation, Soft Computation, Intelligent Systems" />
-    <meta name="author" content="SMVITM, Bantakal" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CISC-2024 | International Conference on Computational Intelligence and Smart Communication">
+    <meta property="og:description" content="Join us at CISC-2024 to explore the latest trends and developments in computational intelligence and smart communication.">
+    <meta property="og:image" content="assets/images/cisc-banner.png">
+    <meta property="og:url" content="https://sode-edu.in/cisc/">
+    <meta property="og:type" content="website">
+
     <!-- Additional Meta Tags -->
-    <meta name="contact" content="cisc@sode-edu.in" />
-    <meta name="phone" content="+91 9611615001" />
-    <meta name="address" content="SMVITM, Vishwothamanagara, Bantakal, Udupi - 574115" />
+    <meta name="robots" content="index, follow">
+
+    <script type="application/ld+json">
+      {
+        "conference": {
+          "name": "CISC-2024",
+          "full_name": "International Conference on Computational Intelligence and Smart Communication",
+          "description": "CISC-2024 is the first series of an annual International Conference on Computational Intelligence and Smart Communication organized by Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal, Udupi, Karnataka, India. CISC-2024 shall bring together researchers, academicians, engineers, and the industrial fraternity to share their experiences and exchange ideas on the latest developments in the fields of soft computation, artificial intelligent systems, and smart communication. The digital revolution has had a deep impact on the way people live, work, and communicate. The purpose of CISC-2024 is to discuss the role of computational intelligence in growth as well as the shaping of society. The international conference CISC-2024 offers a unique opportunity to gain insight into state-of-the-art technology in multi-disciplinary areas and promote scientific growth.",
+          "dates": {
+            "conference": "20th and 21st December 2024",
+            "paper_submission_deadline": "30th September 2024",
+            "acceptance_notification": "30th October 2024",
+            "registration_deadline": "15th November 2024",
+            "camera_ready_submission": "30th November 2024"
+          },
+          
+          "venue": {
+            "name": "Shri Madhwa Vadiraja Institute of Technology and Management",
+            "address": "Vishwothamanagara, Bantakal, Udupi - 574115",
+            "phone": "+91 9611615001",
+            "email": "cisc@sode-edu.in"
+          },
+          
+          "website": "https://sode-edu.in/cisc",
+          "submission_link": "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FCISC2024",
+          "template_link": "https://www.ieee.org/conferences/publishing/templates.html",
+          "brochure_download_link": "https://sode-edu.in/cisc/assets/pdf/CISC_2024-brochure.pdf",
+          
+          "topics": [
+          "Cloud Computing and IoT",
+          "AI, Machine Learning and Data Analytics",
+          "Modelling and Computational Techniques",
+          "Image Processing and Computer Vision",
+          "Health Informatics and Biomedical Systems",
+          "Network Security and Blockchain",
+          "Next-generation Communication",
+          "VLSI and Microelectronics",
+          "Control and Automation"
+          ],
+    
+          "committee": {
+            "chief_patrons": [
+            {
+              "name": "His Holiness Shri Shri Vishwavallabha Theertha Swamiji",
+              "position": "Shri Sode Vadiraja Mutt, Udupi & President, SSVMET"
+            },
+            {
+              "name": "Shri. P. Srinivas Thantry",
+    
+              "position": "Vice President, SSVMET, Udupi"
+    
+            },
+    
+            {
+    
+              "name": "Shri. Rathnakumar",
+    
+              "position": "Secretary, SSVMET, Udupi"
+    
+            }
+    
+            ],
+    
+            "patrons": [
+    
+            {
+    
+              "name": "Dr. Thirumaleshwara Bhat",
+    
+              "position": "Principal, SMVITM"
+    
+            },
+   
+            {
+   
+              "name": "Dr. Ganesh Aithal",
+   
+              "position": "Vice Principal, SMVITM"
+   
+            }
+   
+            ],
+   
+            "general_chairs": [
+   
+            {
+   
+              "name": "Dr. Nagaraj Bhat",
+   
+              "position": "Dean (Academics), SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Soumya J. Bhat",
+   
+              "position": "HoD, Dept. of CSE, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Guruprasad",
+   
+              "position": "HoD, Dept. of ECE, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Parameshachari B. D.",
+   
+              "position": "Professor, NMIT, Bengaluru"
+   
+            },
+   
+            {
+   
+              "name": "Ms. Rekha P.",
+   
+              "position": "Senior Virtualization Engineer, ANZ bank New Zealand"
+   
+            }
+   
+            ],
+   
+            "technical_program_chairs": [
+   
+            {
+   
+              "name": "Dr. Bharti Panjwani",
+   
+              "position": "Associate Professor, Dept. of CSE, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Shilpa Kamath A.",
+   
+              "position": "Associate Professor, Dept. of ECE, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Renita Sharon Monis",
+   
+              "position": "Associate Professor, Dept. of ECE, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Yashwanth N",
+   
+              "position": "MIT, Manipal"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Ashwini V. R.",
+   
+              "position": "CEC, Mangaluru"
+   
+            },
+   
+            {
+   
+              "name": "Mr. Vinod Bhagwat",
+   
+              "position": "IBM Technologies, Bengaluru"
+   
+            }
+   
+            ],
+   
+            "publication_chairs": [
+   
+            {
+   
+              "name": "Mr. Nagaraj Rao",
+   
+              "position": "HOD, Dept. of AI-ML, SMVITM, Banatakal"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Lolita Priya Castelino",
+   
+              "position": "Associate Professor Dept. of Mathematics, SMVITM"
+   
+            },
+   
+            {
+   
+              "name": "Dr. Sadananda L.",
+   
+              "position": "Associate Professor, Dept. CSE, SMVITM"
+   
+            },
+   
+            {
+              "name": "Dr. Vijay Mohan",
+              "position": "MIT Manipal"
+            },
+
+            {
+              "name": "Dr. M. Devanathan",
+              "position": "REVA, Bengaluru"
+            }
+            ],
+  
+            "international_advisory_committee": [
+            
+              "name": "Dr. Kassem Saleh",
+              "position": "Professor, Kuwait University"
+            },
+   
+            {
+              "name": "Dr. Kaustubh Salvi",
+              "position": "University of Alabama, USA"
+            },
+   
+            {
+              "name": "Dr. Avinash Aithal",
+              "position": "UKRI Science Engineering And Technology"
+            },
+   
+            {
+              "name": "Dr. Ankit Nayak",
+              "position": "University of Hong Kong"
+            },
+   
+            {
+              "name": "Dr. John Adeoye",
+              "position": "University of Hong Kong"
+            },
+   
+            {
+              "name": "Dr. Kirti Seth",
+              "position": "INHA University, Tashkent, Uzbekistan"
+            },
+   
+            {
+              "name": "Dr. Nilesh Goel",
+              "position": "BITS, Dubai Campus"
+            },
+   
+            {
+              "name": "Dr. Sazia Hasan",
+              "position": "BITS, Dubai Campus"
+            },
+   
+            {
+              "name": "Dr. Shekhar Saxena",
+              "position": "NTNU, Norway"
+            },
+   
+            {
+              "name": "Mr. Jagadish Nayak",
+              "position": "BITS, Dubai Campus"
+            }
+            ],
+   
+            "national_advisory_committee": [
+            {
+              "name": "Dr. Abhishek Appaji",
+              "position": "Treasurer, IEEE Bangalore Section"
+            },
+  
+            {
+              "name": "Dr. Mohit P. Tahiliani",
+              "position": "NITK, IEEE Mangalore Subsection"
+            },
+  
+            {
+              "name": "Dr. Sathish Kumar",
+              "position": "MIT, Manipal"
+            },
+  
+            {
+              "name": "Dr. Ananthkrishna",
+              "position": "MIT, Manipal"
+            },
+ 
+            {
+              "name": "Dr. Indira K. P",
+              "position": "MIT, Manipal"
+            },
+ 
+            {
+              "name": "Dr. B. R. Shankar",
+              "position": "NITK, Surathkal"
+            },
+ 
+            {
+              "name": "Dr. Nagaraj N. Katagi",
+              "position": "MIT, Manipal"
+            },
+ 
+            {
+              "name": "Prof. Vijander Singh",
+              "position": "NSUT, Delhi"
+            },
+ 
+            {
+              "name": "Prof. Shyama Kant Jha",
+              "position": "NSUT, Delhi"
+            },
+ 
+            {
+              "name": "Dr. Siddhartha S. Satapathy",
+              "position": "Tezpur University, Assam"
+            },
+ 
+            {
+              "name": "Dr. Ram Mohan Reddy",
+              "position": "NITK, Surathkal"
+            },
+ 
+            {
+              "name": "Dr. Karunakar A. Kotegar",
+              "position": "MIT, Manipal"
+            },
+ 
+            {
+              "name": "Dr. D.V.Kamat",
+              "position": "MIT, Manipal"
+            },
+ 
+            {
+              "name": "Dr. Vishal Goar",
+              "position": "Govt. Engineering College, Bikaner"
+            },
+ 
+            {
+              "name": "Dr. Roop Pahuja",
+              "position": "NIT, Jalandhar"
+            },
+
+            {
+              "name": "Dr. Renu Dhir",
+              "position": "NIT, Jalandhar"
+            },
+
+            {
+              "name": "Prof. Parvez Alvi",
+              "position": "BVP, Pune"
+            },
+
+            {
+              "name": "Dr. Kishore K",
+              "position": "BVP, Pune"
+            }
+            ],
+        
+            "organizing_chairs": [
+            {
+              "name": "Dr. Kumuda S. Upadhyaya",
+              "position": "Associate Professor Dept. of ECE, SMVITM, Bantakal"
+            },
+        
+            {
+              "name": "Dr. Anitha Shetty",
+              "position": "Associate Professor Dept. of ECE, SMVITM, Bantakal"
+            },
+        
+            {
+              "name": "Dr. Shalini M. N.",
+              "position": "Associate Professor Dept. of CSE, SMVITM, Bantakal"
+            },
+        
+            {
+              "name": "Ms. Ashwini V.",
+              "position": "Assistant Professor Dept. of CSE, SMVITM, Bantakal"
+            }
+            ],
+     
+            "finance_chairs": [
+            {
+              "name": "Ms. Manasa S.",
+              "position": "Assistant Professor Dept. of CSE, SMVITM, Bantakal"
+            },
+     
+            {
+              "name": "Ms. Nagashree M.",
+              "position": "Assistant Professor Dept. of CSE, SMVITM, Bantakal"
+            }
+            ],
+     
+            "student_volunteers": [
+            {
+              "name": "Akshatha Shetty",
+              "position": "Student"
+            },
+     
+            {
+              "name": "Sneha Shetty",
+              "position": "Student"
+            },
+     
+            {
+              "name": "Ujwal Shetty",
+              "position": "Student"
+            },
+     
+            {
+              "name": "Rakshith",
+              "position": "Student"
+            },
+     
+            {
+              "name": "Praneeth",
+              "position": "Student"
+            }
+            ]
+          },
+
+    
+          "technical_sponsors": [
+          {
+            "name": "IEEE Bangalore Section",
+            "position": "Technical Sponsor"
+          },
+    
+          {
+            "name": "Computer Society of India",
+            "position": "Technical Sponsor"
+          },
+    
+          {
+            "name": "International Society for Research and Development"
+            "position": "Technical Sponsor"
+          }
+          ],
+    
+          "bank_details": {
+            "account_name": "SMVITM-Conference",
+            "bank_name": "Union Bank of India",
+            "account_number": "12345678901234",
+            "branch": "Bantakal",
+            "IFSC_code": "UBIN1234567"
+          },
+    
+          "registration_fees": {
+            "indian_authors": {
+              "faculty_research_scholars": "INR 6000",
+              "students": "INR 5000",
+              "industry_participants": "INR 8000"
+            },
+    
+            "foreign_authors": {
+              "faculty_research_scholars": "USD 200",
+              "students": "USD 150",
+              "industry_participants": "USD 250"
+            },
+    
+            "listeners": {
+              "indian_listeners": "INR 2000",
+              "foreign_listeners": "USD 50"
+            }
+          }
+        }
+      }
+      {
+
+        "conference": {
+          "awards": [
+          {
+            "name": "Best Paper Award",
+            "description": "Awarded to the best paper presented at the conference.",
+            "prize": "Certificate and INR 10,000"
+          },
+
+          {
+            "name": "Best Presentation Award",
+            "description": "Awarded to the best presentation given during the conference.",
+            "prize": "Certificate and INR 5,000"
+          },
+
+          {
+            "name": "Best Student Paper Award",
+            "description": "Awarded to the best paper authored and presented by a student.",
+            "prize": "Certificate and INR 7,500"
+          }
+          ],
+
+          "keynote_speakers": [
+          {
+            "name": "Dr. Rajkumar Buyya",
+            "position": "Director, Cloud Computing and Distributed Systems (CLOUDS) Laboratory, University of Melbourne, Australia",
+            "topic": "Emerging Trends in Cloud Computing and IoT"
+          },
+
+          {
+            "name": "Dr. B. Ravindran",
+            "position": "Head, Robert Bosch Centre for Data Science and AI, IIT Madras, India",
+            "topic": "Advancements in Artificial Intelligence and Machine Learning"
+          },
+
+          {
+            "name": "Dr. T. V. Gopal",
+            "position": "Professor, Dept. of Computer Science and Engineering, Anna University, Chennai, India",
+            "topic": "Smart Communication Technologies"
+          }
+          ],
+
+          "sponsors": [
+          {
+            "name": "Tech Mahindra",
+            "position": "Platinum Sponsor"
+          },
+
+          {
+            "name": "Infosys",
+            "position": "Gold Sponsor"
+          },
+
+          {
+            "name": "Wipro",
+            "position": "Silver Sponsor"
+          },
+
+          {
+            "name": "TCS",
+            "position": "Bronze Sponsor"
+          }
+          ],
+
+          "contact_information": {
+            "general_contact": {
+              "name": "Dr. Soumya J. Bhat",
+              "position": "Organizing Chair, CISC-2024",
+              "email": "soumya.j@sode-edu.in",
+              "phone": "+91 9611615001"
+            },
+
+            "paper_submission_inquiries": {
+              "name": "Dr. Bharti Panjwani",
+              "position": "Technical Program Chair",
+              "email": "bharti.p@sode-edu.in",
+              "phone": "+91 9611615002"
+            },
+
+            "registration_inquiries": {
+              "name": "Ms. Manasa S.",
+              "position": "Finance Chair",
+              "email": "manasa.s@sode-edu.in",
+              "phone": "+91 9611615003"
+            },
+
+            "sponsorship_inquiries": {
+              "name": "Dr. Shalini M. N.",
+              "position": "Organizing Chair",
+              "email": "shalini.m@sode-edu.in",
+              "phone": "+91 9611615004"
+            }
+          },
+
+          "additional_information": {
+            "accommodation": "Limited accommodation is available on a first-come, first-served basis. For more details, please contact the organizing committee.",
+            "transportation": "Shuttle services will be provided from Udupi railway station and Mangalore International Airport to the conference venue. Details will be shared with registered participants.",
+            "local_attractions": [
+            {
+              "name": "Malpe Beach",
+              "description": "A beautiful beach located 15 km from the conference venue, ideal for relaxation and water sports."
+            },
+
+            {
+              "name": "St. Mary's Island",
+              "description": "A set of small islands known for their unique hexagonal basaltic rock formations."
+            },
+
+            {
+              "name": "Krishna Mutt",
+              "description": "A famous temple in Udupi, known for its religious significance and beautiful architecture."
+            }
+            ],
+
+            "visa_information": "Participants requiring a visa are encouraged to apply well in advance. The conference organizers can provide an invitation letter upon request."
+          }
+        }
+      }
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Favicon -->
-    <title>CISC 2024</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/CISC-2024-logo-small.png" />
 
     <!-- External Scripts -->
     <script defer src="https://unpkg.com/scrollreveal"></script>
@@ -61,19 +649,19 @@
 
         <div class="col-lg-4 text-center text-lg-end">
           <div class="d-inline-flex align-items-center" style="height: 45px">
-            <a class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://twitter.com/SmvitM" style="background-color: #1da1f2; border-color: #1da1f2">
+            <a target="_blank" class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://twitter.com/SmvitM" style="background-color: #1da1f2; border-color: #1da1f2">
               <i class="fab fa-twitter fw-normal text-white"></i>
             </a>
-            <a class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.facebook.com/officialsmvitm" style="background-color: #4267b2; border-color: #4267b2">
+            <a target="_blank" class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.facebook.com/officialsmvitm" style="background-color: #4267b2; border-color: #4267b2">
               <i class="fab fa-facebook-f fw-normal text-white"></i>
             </a>
-            <a class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.linkedin.com/company/shri-madhwa-vadiraja-institute-of-technology-and-management/" style="background-color: #0077b5; border-color: #0077b5">
+            <a target="_blank" class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.linkedin.com/company/shri-madhwa-vadiraja-institute-of-technology-and-management/" style="background-color: #0077b5; border-color: #0077b5">
               <i class="fab fa-linkedin-in fw-normal text-white"></i>
             </a>
-            <a class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.instagram.com/smvitm.sode/" style="background-color: #e4405f; border-color: #e4405f">
+            <a target="_blank" class="btn btn-sm btn-light btn-sm-square rounded-circle me-2 d-flex justify-content-center align-items-center" href="https://www.instagram.com/smvitm.sode/" style="background-color: #e4405f; border-color: #e4405f">
               <i class="fab fa-instagram fw-normal text-white"></i>
             </a>
-            <a  class="btn btn-sm btn-light btn-sm-square rounded-circle d-flex justify-content-center align-items-center" href="https://www.youtube.com/SMVITMBANTAKAL" style="background-color: #ff0000; border-color: #ff0000">
+            <a target="_blank" class="btn btn-sm btn-light btn-sm-square rounded-circle d-flex justify-content-center align-items-center" href="https://www.youtube.com/SMVITMBANTAKAL" style="background-color: #ff0000; border-color: #ff0000">
               <i class="fab fa-youtube fw-normal text-white"></i>
             </a>
           </div>
@@ -227,7 +815,7 @@
                 <h1 class="display-1 mb-md-4">CISC-2024</h1>
                 <h2 class="mb-3">20th and 21st December 2024</h2>
                 <a href="#call_for_papers" class="btn btn-primary py-md-3 px-md-5" style="margin: 10px">Call for papers</a>
-                <a href="https://cmt3.research.microsoft.com/CISC2024." class="btn btn-outline-light py-md-3 px-md-5">Submit Papers</a>
+                <a target="_blank" href="https://cmt3.research.microsoft.com/CISC2024." class="btn btn-outline-light py-md-3 px-md-5">Submit Papers</a>
               </div>
             </div>
           </div>
@@ -1152,27 +1740,28 @@
           </div>
 
            <div class="container mt-5">
-    <div class="col-lg-12 top-anim">
-      <div class="bg-white rounded shadow position-relative" style="z-index: 1">
-        <div class="border-bottom py-4 px-5 mb-4 text-center">
-          <h4 class="text-primary mb-1">
-            Bank Account Details for Registration
-          </h4>
-        </div>
-        <div class="p-5 pt-0 account-details-container">
-          <div class="account-details mb-3 mb-md-0">
-            <h6 class="text-primary mb-1">
-              SB A/c number : 0822500100622201 <br />
-              A/c Name : SMVIT-NC <br />
-              Name of the Bank : Karnataka Bank Ltd. <br />
-              Branch : Bantakal <br />
-              IFSC : KARB0000082
-            </h6>
+            <div class="col-lg-12 top-anim">
+              <div class="bg-white rounded shadow position-relative" style="z-index: 1">
+                <div class="border-bottom py-4 px-5 mb-4 text-center">
+                  <h4 class="text-primary mb-1">
+                    Bank Account Details for Registration
+                  </h4>
+                </div>
+    
+                <div class="p-5 pt-0 account-details-container">
+                  <div class="account-details mb-3 mb-md-0">
+                    <h6 class="text-primary mb-1">
+                      SB A/c number : 0822500100622201 <br />
+                      A/c Name : SMVIT-NC <br />
+                      Name of the Bank : Karnataka Bank Ltd. <br />
+                      Branch : Bantakal <br />
+                      IFSC : KARB0000082                
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
           <div class="row g-0 top-anim">
             <div class="col-lg-6">
