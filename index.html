@@ -20,6 +20,81 @@
     <!-- Additional Meta Tags -->
     <meta name="robots" content="index, follow">
 
+    <!-- Data breadcrumbs -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sode-edu.in/cisc/"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://sode-edu.in/cisc/#about"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Committee",
+          "item": "https://sode-edu.in/cisc/#committee"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Call for Papers",
+          "item": "https://sode-edu.in/cisc/#call_for_papers"
+        },
+
+        {
+
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Schedule",
+          "item": "https://sode-edu.in/cisc/#schedule"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Submit Paper",
+          "item": "https://sode-edu.in/cisc/#submission"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Registration",
+          "item": "https://sode-edu.in/cisc/#registration"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Download",
+          "item": "https://sode-edu.in/cisc/#downloads"
+        },
+
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Contact",
+          "item": "https://sode-edu.in/cisc/#contact"
+        }
+        ]
+      }
+    </script>
+
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "conference": {
@@ -542,7 +617,7 @@
         }
       }
     </script>
-
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -607,138 +682,138 @@
 
     <!--=============== HEADER ===============-->
     <header class="header container-fluid">
-  <div class="nav container-fluid">
-    <div class="header-container logo d-flex justify-content-center mb-2">
-      <img src="assets/images/CISC-2024-logo-small.png" alt="loading..." />
-      <div class="header-title">CISC-2024</div>
-    </div>
+      <div class="nav container-fluid">
 
-    <div class="non navbar-nav ms-auto py-0 d-flex flex-row gap-3">
-      <a href="#home" class="nav-item nav-link">Home</a>
-      <a href="#about" class="nav-item nav-link">About</a>
-      <a href="#committee" class="nav-item nav-link">Committee</a>
-      <a href="#call_for_papers" class="nav-item nav-link">Call for Papers</a>
-      <a href="#schedule" class="nav-item nav-link">Schedule</a>
-      <a href="#submission" class="nav-item nav-link">Submit Paper</a>
-      <a href="#registration" class="nav-item nav-link">Registration</a>
-      <a href="#downloads" class="nav-item nav-link">Download</a>
-      <a href="#contact" class="nav-item nav-link">Contact</a>
-    </div>
-
-    <div class="nav-icons d-flex justify-content-center mt-2">
-      <div class="search">
-        <span class="icon2">
-          <i class="fa fa-bars menuBtn"></i>
-        </span>
+        <div class="header-container logo d-flex justify-content-center mb-2">
+          <img src="assets/images/CISC-2024-logo-small.png" alt="loading..." />
+          <div class="header-title">CISC-2024</div>
+        </div>
+   
+        <div class="non navbar-nav ms-auto py-0 d-flex flex-row gap-3">
+          <a href="#home" class="nav-item nav-link">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#committee" class="nav-item nav-link">Committee</a>
+          <a href="#call_for_papers" class="nav-item nav-link">Call for Papers</a>
+          <a href="#schedule" class="nav-item nav-link">Schedule</a>
+          <a href="#submission" class="nav-item nav-link">Submit Paper</a>
+          <a href="#registration" class="nav-item nav-link">Registration</a> 
+          <a href="#downloads" class="nav-item nav-link">Download</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+   
+        <div class="nav-icons d-flex justify-content-center mt-2">
+          <div class="search">
+            <span class="icon2">
+              <i class="fa fa-bars menuBtn"></i>   
+            </span>
+          </div>   
+        </div>  
       </div>
+    </header>
+
+    <div id="menu" class="menu container-fluid">
+      <nav class="nav-container">
+        <div>
+          <a href="#" class="nav-link nav-logo"> </a>
+      
+          <div class="nav-list">
+            <div class="nav-items">
+              <h3 class="nav-subtitle">Quick links</h3>
+          
+              <a href="#home" class="nav-link navlink">
+                <i class="fa fa-home nav-icon"></i>
+                <span class="nav-name">Home</span>
+              </a>
+          
+              <a href="#about" class="nav-link navlink">
+                <i class="fa fa-book nav-icon"></i>
+                <span class="nav-name">About</span>
+              </a>
+         
+              <a href="#committee" class="nav-link navlink">
+                <i class="fa fa-users nav-icon"></i>
+                <span class="nav-name">Committee</span>
+              </a>
+         
+              <a href="#call_for_papers" class="nav-link navlink">
+                <i class="fa fa-file-alt nav-icon"></i>
+                <span class="nav-name">Call for Papers</span>
+              </a>
+         
+              <a href="#schedule" class="nav-link navlink">
+                <i class="fa fa-calendar-alt nav-icon"></i>
+                <span class="nav-name">Schedule</span>
+              </a>
+          
+              <a href="#submission" class="nav-link navlink">
+                <i class="fa fa-upload nav-icon"></i>
+                <span class="nav-name">Submit Paper</span>
+              </a>
+          
+              <a href="#registration" class="nav-link navlink">
+                <i class="fa fa-clipboard-list nav-icon"></i>
+                <span class="nav-name">Registration</span>
+              </a>
+          
+              <a href="#downloads" class="nav-link navlink">
+                <i class="fa fa-download nav-icon"></i>
+                <span class="nav-name">Download</span>
+              </a>
+          
+              <a href="#contact" class="nav-link navlink">
+                <i class="fa fa-envelope nav-icon"></i>
+                <span class="nav-name">Contact</span>
+              </a>
+            </div>
+          </div>
+        
+          <div class="nav-items">
+            <h3 class="nav-subtitle">Social Media</h3>
+         
+            <a href="https://twitter.com/SmvitM" target="_blank" class="nav-link navlink">
+              <i class="fab fa-twitter nav-icon"></i>
+              <span class="nav-name">Twitter</span>
+            </a>
+          
+            <a href="https://www.facebook.com/officialsmvitm" target="_blank" class="nav-link navlink">
+              <i class="fab fa-facebook-f nav-icon"></i>
+              <span class="nav-name">Facebook</span>
+            </a>
+          
+            <a href="https://www.linkedin.com/company/shri-madhwa-vadiraja-institute-of-technology-and-management/" target="_blank" class="nav-link navlink">
+              <i class="fab fa-linkedin-in nav-icon"></i>
+              <span class="nav-name">LinkedIn</span>
+            </a>
+         
+            <a href="https://www.instagram.com/smvitm.sode/" target="_blank" class="nav-link navlink">
+              <i class="fab fa-instagram nav-icon"></i>
+              <span class="nav-name">Instagram</span>
+            </a>
+         
+            <a href="https://www.youtube.com/SMVITMBANTAKAL" target="_blank" class="nav-link navlink">
+              <i class="fab fa-youtube nav-icon"></i>
+              <span class="nav-name">YouTube</span>
+            </a>
+          </div>
+        
+          <div class="nav-items">
+            <h3 class="nav-subtitle">Get in Touch</h3>
+            <a class="nav-link navlink">
+              <i class="fas fa-envelope nav-icon"></i>
+              <span class="nav-name">cisc@sode-edu.in</span>
+            </a>
+        
+            <a class="nav-link navlink">
+              <i class="fas fa-phone nav-icon"></i>
+              <span class="nav-name">+91 9611615001</span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-</header>
 
-<div id="menu" class="menu container-fluid">
-  <nav class="nav-container">
-    <div>
-      <a href="#" class="nav-link nav-logo"> </a>
-
-      <div class="nav-list">
-        <div class="nav-items">
-          <h3 class="nav-subtitle">Quick links</h3>
-
-          <a href="#home" class="nav-link navlink">
-            <i class="fa fa-home nav-icon"></i>
-            <span class="nav-name">Home</span>
-          </a>
-
-          <a href="#about" class="nav-link navlink">
-            <i class="fa fa-book nav-icon"></i>
-            <span class="nav-name">About</span>
-          </a>
-
-          <a href="#committee" class="nav-link navlink">
-            <i class="fa fa-users nav-icon"></i>
-            <span class="nav-name">Committee</span>
-          </a>
-
-          <a href="#call_for_papers" class="nav-link navlink">
-            <i class="fa fa-file-alt nav-icon"></i>
-            <span class="nav-name">Call for Papers</span>
-          </a>
-
-          <a href="#schedule" class="nav-link navlink">
-            <i class="fa fa-calendar-alt nav-icon"></i>
-            <span class="nav-name">Schedule</span>
-          </a>
-
-          <a href="#submission" class="nav-link navlink">
-            <i class="fa fa-upload nav-icon"></i>
-            <span class="nav-name">Submit Paper</span>
-          </a>
-
-          <a href="#registration" class="nav-link navlink">
-            <i class="fa fa-clipboard-list nav-icon"></i>
-            <span class="nav-name">Registration</span>
-          </a>
-
-          <a href="#downloads" class="nav-link navlink">
-            <i class="fa fa-download nav-icon"></i>
-            <span class="nav-name">Download</span>
-          </a>
-
-          <a href="#contact" class="nav-link navlink">
-            <i class="fa fa-envelope nav-icon"></i>
-            <span class="nav-name">Contact</span>
-          </a>
-        </div>
-
-        <div class="nav-items">
-          <h3 class="nav-subtitle">Social Media</h3>
-
-          <a href="https://twitter.com/SmvitM" target="_blank" class="nav-link navlink">
-            <i class="fab fa-twitter nav-icon"></i>
-            <span class="nav-name">Twitter</span>
-          </a>
-
-          <a href="https://www.facebook.com/officialsmvitm" target="_blank" class="nav-link navlink">
-            <i class="fab fa-facebook-f nav-icon"></i>
-            <span class="nav-name">Facebook</span>
-          </a>
-
-          <a href="https://www.linkedin.com/company/shri-madhwa-vadiraja-institute-of-technology-and-management/" target="_blank" class="nav-link navlink">
-            <i class="fab fa-linkedin-in nav-icon"></i>
-            <span class="nav-name">LinkedIn</span>
-          </a>
-
-          <a href="https://www.instagram.com/smvitm.sode/" target="_blank" class="nav-link navlink">
-            <i class="fab fa-instagram nav-icon"></i>
-            <span class="nav-name">Instagram</span>
-          </a>
-
-          <a href="https://www.youtube.com/SMVITMBANTAKAL" target="_blank" class="nav-link navlink">
-            <i class="fab fa-youtube nav-icon"></i>
-            <span class="nav-name">YouTube</span>
-          </a>
-        </div>
-
-        <div class="nav-items">
-          <h3 class="nav-subtitle">Get in Touch</h3>
-
-          <a class="nav-link navlink">
-            <i class="fas fa-envelope nav-icon"></i>
-            <span class="nav-name">cisc@sode-edu.in</span>
-          </a>
-
-          <a class="nav-link navlink">
-            <i class="fas fa-phone nav-icon"></i>
-            <span class="nav-name">+91 9611615001</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<div id="overlay" class="overlay container-fluid"></div>
-
+    <div id="overlay" class="overlay container-fluid"></div>
+  
     <!--=============== BANNER ===============-->
     <section class="slider-banner" id="home">
       <div class="swiper slider mySwiper">
@@ -2144,6 +2219,24 @@
                   <a class="text-light" href="#contact">
                     <i class="fa fa-arrow-right text-primary me-2"></i>
                     Contact Us
+                  </a>
+                </div>
+              </div>
+
+              <div class="left_anim col-lg-4 col-md-12 pt-5 mb-5">
+                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                  <h3 class="text-light mb-0">Policies</h3>
+                </div>
+
+                <div class="link-animated d-flex flex-column justify-content-start" id="quick-links">
+                  <a class="text-light mb-2" target="_blank" href="assets/other/terms-and-conditions.html">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>
+                    Terms and Conditions 
+                  </a>
+  
+                  <a class="text-light mb-2" target="_blank" href="assets/other/Privacy-Policy.html">
+                    <i class="fa fa-arrow-right text-primary me-2"></i>
+                    Privacy Policy
                   </a>
                 </div>
               </div>
