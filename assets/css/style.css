@@ -1201,3 +1201,154 @@ a.movie-item:hover {
   justify-content: center;
   border-radius: 50%;
 }
+:root {
+  --primary-color: #06a3da;
+  --secondary-color: #000;
+  --background-color: white;
+  --box-shadow-color: rgba(22, 8, 43, 0.1);
+  --font-size-small: 16px;
+  --font-size-large: 1.2rem;
+  --letter-spacing: 0.1rem;
+  --transition-duration: 0.3s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -230px;
+  width: 230px;
+  height: 100vh;
+  padding: 1rem 1rem 0;
+  background-color: var(--background-color);
+  box-shadow: 1px 0 0 var(--box-shadow-color);
+  transition: left var(--transition-duration) ease;
+  z-index: 200;
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.overlay.open {
+  display: block;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  overflow: auto;
+  scrollbar-width: none;
+  color: var(--secondary-color);
+}
+
+.nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-menu {
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+}
+
+.nav-list,
+.nav-items {
+  display: grid;
+}
+
+.nav-list {
+  row-gap: 2.5rem;
+}
+
+.nav-items {
+  row-gap: 1.5rem;
+}
+
+.nav-subtitle {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+.nav-link {
+  display: flex;
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-icon {
+  font-size: var(--font-size-large);
+  margin-right: 0.5rem;
+}
+
+.nav-name {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-logout {
+  margin-top: 5rem;
+}
+
+.nav-dropdown {
+  overflow: hidden;
+  max-height: 21px;
+  transition: 0.4s ease-in-out;
+}
+
+.nav-dropdown-collapse {
+  background-color: var(--background-color);
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+.nav-dropdown-content {
+  display: grid;
+  row-gap: 0.5rem;
+  padding: 0.75rem 2.5rem 0.75rem 1.8rem;
+}
+
+.nav-dropdown-item {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.nav-dropdown-item:hover {
+  color: var(--secondary-color);
+}
+
+.nav-dropdown-icon {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.nav-dropdown:hover {
+  max-height: 100rem;
+}
+
+.nav-dropdown:hover .nav-dropdown-icon {
+  transform: rotate(180deg);
+}
