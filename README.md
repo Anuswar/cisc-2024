@@ -8,18 +8,11 @@ To run this website locally or contribute to its development, follow these steps
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/cisc-2024.git
+    git clone https://github.com/Anuswar/cisc-2024.git
     cd cisc-2024
     ```
 
-2. **Open the `index.html` file** in your preferred web browser or set up a local development server:
-    ```bash
-    # For Python users
-    python -m http.server
-    # For Node.js users
-    npx http-server
-    ```
-3. **Open your browser** and navigate to `http://localhost:8000` (or the port specified by your server).
+2. **Open your browser** and navigate to `http://localhost:8000`.
 
 ## 🛠️ Technologies Used
 

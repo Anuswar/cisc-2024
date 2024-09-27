@@ -7,12 +7,12 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "assets/images/logo/CISC-2024-icon-192x192.png",
+      "src": "assets/images/logo/CISC-2024-logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/images/logo/CISC-2024-icon-512x512.png",
+      "src": "assets/images/logo/CISC-2024-logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
