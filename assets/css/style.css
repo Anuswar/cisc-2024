@@ -176,6 +176,16 @@ h6,
   animation: section-title-run-sm 5s infinite linear;
 }
 
+.top-bar{
+  text-decoration: none; 
+  font-size: 16px;
+  color: var(--light);
+}
+
+.top-bar:hover{
+  color: var(--primary);
+}
+
 /* Standard keyframes */
 @keyframes section-title-run {
   0% {
@@ -956,6 +966,70 @@ a.movie-item:hover {
   }
 }
 
+.committee-item ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  
+}
+
+.committee-item li.name {
+  text-align: left;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.committee-item li.name:before {
+  content: '• ';
+  color: #000; /* You can adjust the bullet color here */
+  font-weight: bold;
+}
+
+.committee-item li.sub {
+  text-align: left;
+  margin-left: 15px; /* This gives a little indent to sub-items */
+  font-style: italic;
+  color: #555;
+}
+
+.committee-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates flexible cards that adapt */
+  gap: 20px;
+}
+
+.committee-item {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.committee-item:hover {
+  transform: scale(1.05);
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li b {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
 /*=============== POP UP ===============*/
 .popup {
   display: none;
@@ -1112,7 +1186,7 @@ a.movie-item:hover {
 .testimonial-item {
   background-color: #eef9ff !important;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   width: 300px;
 }
