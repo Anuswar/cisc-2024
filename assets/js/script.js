@@ -97,11 +97,9 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".custom-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-  grabCursor: true,
   loop: true,
   centeredSlides: false,
   slidesPerGroupSkip: 1,
-  grabCursor: true,
   mousewheel: true,
 
   keyboard: {
