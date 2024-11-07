@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
     easing: "ease-in-out",
   });
 
-  ScrollReveal().reveal(".p-3", {
+  ScrollReveal().reveal(".p-33", {
     origin: "bottom",
     distance: "50px",
     duration: 1000,
