@@ -397,7 +397,6 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  align-items: flex-start;
   padding: 10px 0;
   border-bottom: 1px solid rgba(256, 256, 256, 0.1);
 }
@@ -837,7 +836,7 @@ a.movie-item:hover {
   z-index: 2;
 }
 
-.carousel-caption .p-3 {
+.carousel-caption .p-33 {
   max-width: 900px;
   text-align: center;
 }
@@ -1634,39 +1633,5 @@ a.movie-item:hover {
 #sponsor .testimonial-item img {
   width: auto;
   height: 100px;
-}
-
-
-/* Main Logo */
-.main-logo {
-  height: 50px;
-  width: 50px;
-  margin-right: 5px;
-}
-
-/* College Logo Styling */
-.college-logo {
-  height: 50px;
-  width: 50px;
-  margin-left: 20px;
-}
-
-@media (max-width: 560px) {
-  .logo {
-    font-size: 25px;
-  }
-
-  .college-logo {
-    height: 45px;
-    width: 45px;
-    margin-left: 5px;
-  }
-}
-
-/* Alignment and Positioning */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 3px;
 }
 
