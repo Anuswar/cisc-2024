@@ -1,5 +1,5 @@
 /* =============== GLOBAL =============== */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap");
 
 :root {
   /*========== Colors ==========*/
@@ -397,6 +397,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: flex-start;
   padding: 10px 0;
   border-bottom: 1px solid rgba(256, 256, 256, 0.1);
 }
@@ -419,6 +420,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: center;
 }
 
 .logo.header-title {
@@ -483,6 +485,12 @@ body {
 }
 
 @media (max-width: 360px) {
+  .logo img {
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+  }
+
   .logo {
     font-size: 1.2rem;
   }
@@ -733,6 +741,59 @@ a.movie-item:hover {
   transform: rotate(180deg);
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 1px 0 0 rgba(22, 8, 43, 0.1);
+  transition: left 0.3s ease;
+  z-index: 200;
+}
+
+.menu.open {
+  left: 0;
+}
+
+#menu .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  color: #000;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+#menu .nav-link:hover,
+#menu .nav-link.active {
+  background-color: #f0f0f0;
+  color: #06a3da;
+}
+
+.nav-icon {
+  font-size: 1.3rem;
+  margin-right: 1rem; 
+}
+
+.nav-name {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+
 /*=============== SLIDESHOW BANNER ===============*/
 .mySwiper {
   width: 100%;
@@ -916,118 +977,116 @@ a.movie-item:hover {
   }
 }
 
+.polaroid {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 100%;
+  display: inline-block;
+  transform: rotate(-3deg); 
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.polaroid-left {
+  transform: rotate(3deg); 
+}
+
+.polaroid:hover,
+.polaroid-left:hover {
+  transform: rotate(0deg) scale(1.05); 
+}
+
+.polaroid-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
 /* =============== COMMITTEE =============== */
 .committee-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  gap: 20px;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-.committee-item {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 calc(33.33% - 20px);
-  flex: 1 1 calc(33.33% - 20px);
-  background-color: #eef9ff !important;
-  padding: 20px;
-  border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.committee-item h4 {
-  margin-bottom: 10px;
-}
-
-.committee-item ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-.committee-item li {
-  margin-bottom: 5px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 767px) {
-  .committee-item {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-  }
-}
-
-.committee-item ul {
-  padding-left: 0;
-  list-style: none;
-  text-align: left;
-  
-}
-
-.committee-item li.name {
-  text-align: left;
-  font-weight: bold;
-  list-style-type: none;
-}
-
-.committee-item li.name:before {
-  content: '• ';
-  color: #000; /* You can adjust the bullet color here */
-  font-weight: bold;
-}
-
-.committee-item li.sub {
-  text-align: left;
-  margin-left: 15px; /* This gives a little indent to sub-items */
-  font-style: italic;
-  color: #555;
-}
-
-.committee-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates flexible cards that adapt */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
   gap: 20px;
+  margin: 0 auto; 
+  max-width: 1000px;
+  align-items: center;
 }
 
 .committee-item {
-  background-color: white;
-  border: 2px solid #ddd;
-  border-radius: 8px;
+  background-color: #eef9ff; 
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+  text-align: center; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%; 
+  margin: 1%; 
 }
 
 .committee-item:hover {
   transform: scale(1.05);
 }
 
-h4 {
+.committee-item h4 {
+  margin-bottom: 10px; 
   font-size: 1.25em;
-  margin-bottom: 15px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.committee-item ul {
+  padding-left: 0; 
+  list-style: none;
+  text-align: left;
 }
 
-ul li {
+.committee-item li {
   margin-bottom: 5px;
 }
 
-ul li b {
-  display: inline-block;
-  margin-bottom: 3px;
+@media (max-width: 767px) {
+  .committee-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .committee-item {
+    flex: 1 1 100%; 
+  }
+}
+
+.committee-item li.name {
+  font-weight: bold;
+}
+
+.committee-item li.name:before {
+  content: '• '; 
+  color: #000; 
+  font-weight: bold;
+}
+
+.committee-item li.sub {
+  margin-left: 15px; 
+  font-style: italic;
+  color: #555;
+}
+
+/* For smaller screens - 1 column */
+@media (max-width: 768px) {
+  .committee-item {
+    width: 100%; 
+    margin: 0 0 20px; 
+  }
 }
 
 /*=============== POP UP ===============*/
@@ -1426,3 +1485,188 @@ ul li b {
 .nav-dropdown:hover .nav-dropdown-icon {
   transform: rotate(180deg);
 }
+
+/* =============== REGISTRACTION =============== */
+.registration-section {
+  max-width: 1300px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.section-title {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.section-title h1 {
+  font-weight: 700;
+  color: #2b55e0;
+  font-size: 2em;
+}
+
+.section-title p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.registration-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.registration-card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.card-content {
+  padding: 20px;
+  color: #333;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.contact-info a {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .registration-section {
+    padding: 20px;
+  }
+
+  .section-title h1 {
+    font-size: 1.8em;
+  }
+
+  .section-title p {
+    font-size: 0.9em;
+  }
+
+  .card-header {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .card-content {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h1 {
+    font-size: 1.5em;
+  }
+
+  .section-title p {
+    font-size: 0.85em;
+  }
+
+  .card-header {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+
+  .card-content {
+    font-size: 0.85em;
+    padding: 10px;
+  }
+}
+
+/* =============== IMAGE POP UP =============== */
+.custom-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom close button */
+.custom-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Hover effect for the close button */
+.custom-close:hover {
+  color: #ff6666; 
+}
+
+/* Pop-up image styling */
+.popup-image {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sponsor .testimonial-item img {
+  width: auto;
+  height: 100px;
+}
+
+
+/* Main Logo */
+.main-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 5px;
+}
+
+/* College Logo Styling */
+.college-logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+@media (max-width: 560px) {
+  .logo {
+    font-size: 25px;
+  }
+
+  .college-logo {
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+  }
+}
+
+/* Alignment and Positioning */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+

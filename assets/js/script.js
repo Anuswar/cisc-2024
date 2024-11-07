@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
     easing: "ease-in-out",
   });
 
-  ScrollReveal().reveal(".header .logo, .header .menuBtn, .header .non", {
+  ScrollReveal().reveal(".header .logo, .header .menuBtn, .header, .non, .college-logo", {
     origin: "top",
     distance: "50px",
     duration: 1000,
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((navLink) => {
       navLink.addEventListener("click", function (event) {
         closeMenu();
-        event.preventDefault(); // Prevent default navigation to handle it manually
+        event.preventDefault(); 
         const href = navLink.getAttribute("href");
         if (href.startsWith("#")) {
           const target = document.querySelector(href);
@@ -392,4 +392,26 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+});
+
+/*=============== IMAGE POP UP ===============*/
+function showImagePopup() {
+  document.getElementById("customImagePopup").style.display = "flex";
+}
+
+// Function to close the popup
+function hideImagePopup() {
+  document.getElementById("customImagePopup").style.display = "none";
+}
+
+// Close the popup when the "Esc" key is pressed
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    hideImagePopup();
+  }
+});
+
+// Prevent clicking on the image inside the popup from closing it
+document.querySelector(".popup-image").addEventListener("click", function(event) {
+  event.stopPropagation();
 });
