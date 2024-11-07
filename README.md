@@ -18,14 +18,14 @@ To run this website locally or contribute to its development, follow these steps
 
 ## 🛠️ Technologies Used
 
-- **HTML**: Structure and content of the web pages.
-- **CSS**: Styling and layout of the website.
-- **JavaScript**: Adds interactivity and dynamic functionality.
-- **CSS Framework**: **Bootstrap** - for responsive and mobile-friendly layouts.
-- **Icons**: **Font Awesome** - provides vector icons for UI elements.
-- **Slider**: **Swiper** - enables touch-friendly sliders and carousels.
-- **Animations**: **ScrollReveal** - adds smooth scroll-based animations.
-- **Grid Layout**: **Masonry** - creates a dynamic grid layout, ideal for galleries or portfolios. 
+- Frontend: HTML, CSS, JavaScript
+- Framework: Bootstrap
+- Fonts: Google Fonts (Nunito, Rubik)
+- Icons: Font Awesome
+- Libraries:
+    - Swiper (slider)
+    - ScrollReveal (scroll animations)
+    - Masonry (Grid Layout)
 
 ## 📂 Project Structure
 
