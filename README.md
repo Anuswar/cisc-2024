@@ -1,4 +1,4 @@
-![CISC-2024 Website Preview](https://raw.githubusercontent.com/Anuswar/linktree-clone/main/preview.jpg)
+![CISC-2024 Website Preview](https://raw.githubusercontent.com/Anuswar/cisc-2024/main/assets/images/preview.png)
 
 # 🎓 CISC-2024 Website
 
