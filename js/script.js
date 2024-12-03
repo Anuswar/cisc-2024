@@ -30,63 +30,16 @@ window.addEventListener("load", () => {
   ScrollReveal().reveal(".about-text", { ...revealOptions, origin: "right" });
   ScrollReveal().reveal(".about-image", { ...revealOptions, origin: "left" });
   ScrollReveal().reveal(".top-anim", { ...revealOptions, origin: "top" });
-});
 
-/*=============== SWIPER SLIDER ===============*/
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  lazy: true,
-  centeredSlides: true,
-  effect: "fade",
-  grabCursor: true,
-  loop: true,
 
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-});
+  // Initialize WOW.js for animations
+  new WOW().init();
 
-var swiper = new Swiper(".custom-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: false,
-  slidesPerGroupSkip: 1,
-  mousewheel: true,
-
-  keyboard: {
-    enabled: true,
-  },
-
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    // when window width is <= 768px
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-
-    // when window width is <= 1024px
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
+  // Initialize counterUp for elements with data-toggle="counter-up" attribute
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 2000
+  });
 });
 
 /*=============== HEADER ===============*/
@@ -196,6 +149,41 @@ document.addEventListener("DOMContentLoaded", function () {
   setActiveLink();
 });
 
+/*=============== COMMITTEE ===============*/
+document.addEventListener('DOMContentLoaded', function () {
+  var elem = document.querySelector('.committee-container');
+  new Masonry(elem, {
+    itemSelector: '.committee-card',
+    columnWidth: '.committee-card',
+    percentPosition: true,
+    gutter: 10
+  });
+});
+
+/*=============== GOOGLE FORM ===============*/
+function adjustIframeSize() {
+  const iframe = document.getElementById('googleForm');
+  const screenWidth = window.innerWidth;
+
+  // Adjust iframe dimensions based on screen size
+  if (screenWidth < 576) {
+    iframe.style.width = '100vh';
+    iframe.style.height = '700px';
+  } else if (screenWidth < 768) {
+    iframe.style.width = '600px';
+    iframe.style.height = '700px';
+  } else {
+    iframe.style.width = '800px';
+    iframe.style.height = '700px';
+  }
+}   
+
+  // Initial adjustment on page load
+  adjustIframeSize();
+
+  // Add an event listener to adjust iframe size on window resize
+  window.addEventListener('resize', adjustIframeSize);
+
 /*=============== FOOTER ===============*/
 document.addEventListener("DOMContentLoaded", function () {
   const quickLinks = document.getElementById("quick-links");
@@ -217,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
 
-        // Remove the fragment identifier from the URL
         if (history.pushState) {
           history.pushState(
             null,
@@ -233,7 +220,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*=============== BACK TO TOP ===============*/
-// Function to show or hide the scroll-up button based on scroll position
 const scrollUp = () => {
   const scrollUpButton = document.getElementById("scroll-up");
   if (scrollUpButton) {
@@ -245,7 +231,6 @@ const scrollUp = () => {
   }
 };
 
-// Function to smoothly scroll to the top when the button is clicked
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -253,10 +238,8 @@ const scrollToTop = () => {
   });
 };
 
-// Add event listener for scroll to show/hide the button
 window.addEventListener("scroll", scrollUp);
 
-// Add event listener for click on the scroll-up button to scroll to the top
 const scrollUpButton = document.getElementById("scroll-up");
 if (scrollUpButton) {
   scrollUpButton.addEventListener("click", (event) => {
@@ -265,74 +248,6 @@ if (scrollUpButton) {
   });
 }
 
-// Disable scroll restoration
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
-
-/*=============== POP UP ===============*/
-document.addEventListener("DOMContentLoaded", () => {
-  const popupButtons = document.querySelectorAll(".popupButton");
-  const popups = document.querySelectorAll(".popup");
-
-  if (popupButtons) {
-    popupButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const popupId = button.getAttribute("data-popup");
-        const popup = document.getElementById(popupId);
-        if (popup) {
-          popup.style.display = "block";
-        }
-      });
-    });
-  }
-
-  if (popups) {
-    popups.forEach((popup) => {
-      const closeButton = popup.querySelector(".close");
-
-      if (closeButton) {
-        // Hide the popup when the close button is clicked
-        closeButton.addEventListener("click", () => {
-          popup.style.display = "none";
-        });
-      }
-
-      // Hide the popup when clicking outside of the popup content
-      window.addEventListener("click", (event) => {
-        if (event.target === popup) {
-          popup.style.display = "none";
-        }
-      });
-
-      // Hide the popup when pressing the Esc key
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          popup.style.display = "none";
-        }
-      });
-    });
-  }
-});
-
-/*=============== IMAGE POP UP ===============*/
-function showImagePopup() {
-  document.getElementById("customImagePopup").style.display = "flex";
-}
-
-// Function to close the popup
-function hideImagePopup() {
-  document.getElementById("customImagePopup").style.display = "none";
-}
-
-// Close the popup when the "Esc" key is pressed
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    hideImagePopup();
-  }
-});
-
-// Prevent clicking on the image inside the popup from closing it
-document.querySelector(".popup-image").addEventListener("click", function(event) {
-  event.stopPropagation();
-});

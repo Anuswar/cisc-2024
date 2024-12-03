@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sode-edu.in/cisc/#call_for_papers</loc>
-    <lastmod>2024-06-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://sode-edu.in/meems/</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/#about</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FCISC2024</loc>
-    <lastmod>2024-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://sode-edu.in/meems/#schedule</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ieee.org/conferences/publishing/templates.html</loc>
-    <lastmod>2024-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://sode-edu.in/meems/#committee</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sode-edu.in/cisc/assets/pdf/CISC_2024-brochure.pdf</loc>
-    <lastmod>2024-06-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://sode-edu.in/meems/#call-for-paper</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/#submission-of-paper</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/#download</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/#contact</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/pages/terms-and-conditions.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sode-edu.in/meems/pages/Privacy-Policy.html</loc>
+    <lastmod>2024-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
