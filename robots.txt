@@ -12,4 +12,4 @@ User-agent: BadBot
 Disallow: /
 
 # Sitemap for better indexing
-Sitemap: https://sode-edu.in/meems/meems-2024/sitemap.xml
+Sitemap: https://sode-edu.in/cisc/sitemap.xml

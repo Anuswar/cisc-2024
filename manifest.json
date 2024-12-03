@@ -1,16 +1,20 @@
 {
-    "name": "MEEMS-2024 Conference",
-    "short_name": "MEEMS-2024",
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#06A3DA",
-    "background_color": "#ffffff",
-    "icons": [
-      {
-        "src": "assets/images/logo/smvitm-logo.png",
-        "sizes": "72x71",
-        "type": "image/png"
-      }
-    ]
-  }
-  
+  "name": "CISC-2024 Conference",
+  "short_name": "CISC-2024",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#06A3DA",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/images/logo/CISC-2024-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo/CISC-2024-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
