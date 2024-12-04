@@ -203,9 +203,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let link of links) {
     link.addEventListener("click", function (event) {
-      event.preventDefault();
       const href = this.getAttribute("href");
 
+      // If the link is an external link, open it as usual
+      if (href.startsWith("http") || href.includes("://")) {
+        return; // Let the browser handle external links
+      }
+
+      // If the link is internal, prevent default behavior and scroll smoothly
+      event.preventDefault();
       if (href.startsWith("#")) {
         const targetId = href.substring(1);
         const targetElement = document.getElementById(targetId);
@@ -217,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
 
-        // Remove the fragment identifier from the URL
+        // Optionally remove the fragment identifier from the URL
         if (history.pushState) {
           history.pushState(
             null,
