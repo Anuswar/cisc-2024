@@ -196,6 +196,30 @@ document.addEventListener("DOMContentLoaded", function () {
   setActiveLink();
 });
 
+/*=============== GOOGLE FORM ===============*/
+function adjustIframeSize() {
+  const iframe = document.getElementById('googleForm');
+  const screenWidth = window.innerWidth;
+
+  // Adjust iframe dimensions based on screen size
+  if (screenWidth < 576) {
+    iframe.style.width = '100vh';
+    iframe.style.height = '700px';
+  } else if (screenWidth < 768) {
+    iframe.style.width = '600px';
+    iframe.style.height = '700px';
+  } else {
+    iframe.style.width = '800px';
+    iframe.style.height = '700px';
+  }
+}   
+
+  // Initial adjustment on page load
+  adjustIframeSize();
+
+  // Add an event listener to adjust iframe size on window resize
+  window.addEventListener('resize', adjustIframeSize);
+
 /*=============== FOOTER ===============*/
 document.addEventListener("DOMContentLoaded", function () {
   const quickLinks = document.getElementById("quick-links");
@@ -341,4 +365,14 @@ document.addEventListener("keydown", function(event) {
 // Prevent clicking on the image inside the popup from closing it
 document.querySelector(".popup-image").addEventListener("click", function(event) {
   event.stopPropagation();
+});
+
+/*=============== COMMITTEE ===============*/
+document.addEventListener("DOMContentLoaded", function () {
+  var elem = document.querySelector(".committee-container");
+  new Masonry(elem, {
+    itemSelector: ".committee-item",
+    columnWidth: ".committee-item",
+    percentPosition: true,
+  });
 });
